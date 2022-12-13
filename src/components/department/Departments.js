@@ -8,12 +8,14 @@ import "./Department.css";
 
 const info = [
   {
+    id: 1,
     title: "Pathology",
     img: pathology,
     content:
       "Pathology is a branch of medicine that studies the causes, origins, and characteristics of disease.",
   },
   {
+    id: 2,
     title: "Radiology",
     img: radiology,
     content:
@@ -29,6 +31,7 @@ export default function Department() {
         return (
           <div>
             <MediaCard
+              key={data.id}
               src={data.img}
               title={data.title}
               content={data.content}

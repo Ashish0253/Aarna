@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import Footer from "./Footer";
+import Footer from "./footer/Footer";
 // import Home from "./Home";
 import Departments from "./department/Departments";
 // import Services from "./Services";
