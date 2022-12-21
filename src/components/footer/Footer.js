@@ -79,7 +79,7 @@ function Footer() {
         </div>
 
         {/* column 2 */}
-        <div className="m-6">
+        <div className="m-6 px-12">
           <h1 className="font-semibold text-3xl m-2 border-b-4 py-4 w-1/3">
             Departments
           </h1>
@@ -90,8 +90,8 @@ function Footer() {
         </div>
 
         {/* column 3 */}
-        <div className="m-6">
-          <h1 className="font-semibold text-3xl m-2 w-1/2 border-b-4 py-4">
+        <div className="m-6 ">
+          <h1 className="font-semibold text-3xl m-2 border-b-4 py-4 w-3/5">
             Quick Links
           </h1>
           <ul className="p-2">
