@@ -4,7 +4,7 @@ import Logo from "../../Assets/dark-logo.png";
 function Footer() {
   return (
     <footer className="">
-      <div className="grid grid-cols-4 text-white bg-footerPrimary p-5">
+      <div className="grid grid-cols-4 text-white bg-footerPrimary p-10">
         {/* column 1 */}
         <div className="col">
           <img src={Logo} alt="Aarna logo" className="w-10/12 h-auto" />
