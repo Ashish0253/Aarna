@@ -6,7 +6,7 @@ function Footer() {
     <footer className="">
       <div className="grid grid-cols-4 text-white bg-footerPrimary p-10">
         {/* column 1 */}
-        <div className="col">
+        <div>
           <img src={Logo} alt="Aarna logo" className="w-10/12 h-auto" />
 
           <ul>
@@ -110,26 +110,6 @@ function Footer() {
           <ul className="p-2">
             <li className="mb-2">Open 24x7</li>
           </ul>
-        </div>
-      </div>
-
-      <div className="bg-footerSecondary grid grid-cols-2 ">
-        <div></div>
-        <div className="text-white font-semibold grid justify-end m-6">
-          <div className="m-2">Stay Informed and Healthy</div>
-          <form>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              maxLength="10"
-              placeholder="enter your email"
-              className="rounded"
-            ></input>
-          </form>
-          <button type="submit" className="bg-footerPrimary m-4 rounded">
-            SignUp
-          </button>
         </div>
       </div>
     </footer>

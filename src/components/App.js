@@ -1,10 +1,8 @@
 import React from "react";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
-// import Home from "./Home";
 import Departments from "./department/Departments";
-// import Services from "./Services";
-// import Doctors from "./Doctors";
+import Stickyfooter from "./footer/Stickyfooter";
 
 function App() {
   return (
@@ -12,6 +10,7 @@ function App() {
       <Header />
       <Departments />
       <Footer />
+      <Stickyfooter />
     </div>
   );
 }
