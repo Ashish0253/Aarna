@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Popup from "../Popup";
+import Popup from "../popup/Popup";
 
 export default function Stickyfooter() {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,10 +1,10 @@
 import React from "react";
 import Logo from "../../Assets/ARNA-LOGO.png";
-import insta from "../../Assets/instagram.png";
-import linkedin from "../../Assets/linkedin.png";
-import twitter from "../../Assets/twitter.png";
-import facebook from "../../Assets/facebook.png";
-import phoneCall from "../../Assets/phone-call.png";
+import insta from "../../Assets/footer/instagram.png";
+import linkedin from "../../Assets/footer/linkedin.png";
+import twitter from "../../Assets/footer/twitter.png";
+import facebook from "../../Assets/footer/facebook.png";
+import phoneCall from "../../Assets/footer/phone-call.png";
 
 export default function Footer() {
   return (
@@ -94,7 +94,7 @@ export default function Footer() {
           {/* <h1 className="font-semibold text-3xl m-2 border-b-4 py-4 w-1/3">
             Departments
           </h1> */}
-          <ul className="p-2 mt-20">
+          <ul className="p-2 mt-20 text-md">
             <li className="mb-4 ">
               <a href="/" className="hover:text-[#1a0e69]">
                 About Us
@@ -124,7 +124,7 @@ export default function Footer() {
         </div>
 
         {/* column 3 */}
-        <div className="m-6 ">
+        <div className="m-6 text-md">
           {/* <h1 className="font-semibold text-3xl m-2 border-b-4 py-4 w-3/5">
             Quick Links
           </h1> */}

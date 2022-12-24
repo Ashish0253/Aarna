@@ -19,7 +19,7 @@ export default function Modal(props) {
         <form>
           <div>
             <input
-              className="mt-10 mx-4 w-[500px] h-[50px] border-gray-400 rounded border-[1px] bg-[url('components/mobile-phone.png')] bg-no-repeat bg-contain"
+              className="mt-10 mx-4 w-[500px] h-[50px] border-gray-400 rounded border-[1px]"
               type="tel"
               id="mobile"
               name="mobile"
@@ -69,3 +69,5 @@ export default function Modal(props) {
     document.getElementById("portal")
   );
 }
+
+// bg-[url('components/popup/mobile-phone.png')] bg-no-repeat bg-contain
