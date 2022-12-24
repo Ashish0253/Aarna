@@ -1,10 +1,11 @@
 import React from "react";
 import Logo from "../../Assets/ARNA-LOGO.png";
+import User from "../../Assets/user.png";
 
 export default function Navbar() {
   return (
-    <div className="grid grid-cols-3">
-      <div className="">
+    <div className="grid grid-cols-3 bg-[#f0f8ff]">
+      <div className="ml-20">
         <a href="/">
           <img
             src={Logo}
@@ -15,29 +16,64 @@ export default function Navbar() {
       </div>
 
       <div className="col-span-2">
-        <div className="grid grid-rows-2">
-          <div className="m-2">
-            <a href="/" className="m-2">
+        <div className="mt-10 text-black">
+          <a
+            href="/"
+            className="m-2 font-semibold text-lg ml-6 hover:text-[#23138f] "
+          >
+            <button className="transform hover:scale-110 ease-out duration-300">
+              Home
+            </button>
+          </a>
+          <a
+            href="/"
+            className="m-2 font-semibold text-lg ml-6 hover:text-[#23138f] "
+          >
+            <button className="transform hover:scale-110 ease-out duration-300">
+              Health Packages
+            </button>
+          </a>
+          <a
+            href="/"
+            className="m-2 font-semibold text-lg ml-6 hover:text-[#23138f] "
+          >
+            <button className="transform hover:scale-110 ease-out duration-300">
               Doctors
-            </a>
-            <a href="/" className="m-2">
+            </button>
+          </a>
+          <a
+            href="/"
+            className="m-2 font-semibold text-lg ml-6 hover:text-[#23138f] "
+          >
+            <button className="transform hover:scale-110 ease-out duration-300">
               Services
-            </a>
-            <a href="/" className="m-2">
-              Free call: 1800-572-0005 / 999-888-000-5
-            </a>
-            <a href="/" className="m-2">
-              Contact Us
-            </a>
-          </div>
-          <div className="m-2">
-            <a href="/" className="m-2">
+            </button>
+          </a>
+          <a
+            href="/"
+            className="m-2 font-semibold text-lg ml-6 hover:text-[#23138f] "
+          >
+            <button className="transform hover:scale-110 ease-out duration-300">
               Book a Test
-            </a>
-            <a href="/" className="m-2">
-              Login
-            </a>
-          </div>
+            </button>
+          </a>
+          <a
+            href="/"
+            className="m-2 font-semibold text-lg ml-6 hover:text-[#23138f] "
+          >
+            <button className="transform hover:scale-110 ease-out duration-300">
+              Contact Us
+            </button>
+          </a>
+          <a
+            href="/"
+            className="m-2 font-semibold text-lg ml-6 hover:text-[#23138f] "
+          >
+            <button className="transform hover:scale-110 ease-out duration-300">
+              Login / Signup
+              <img src={User} alt="users" className="w-5 inline mx-2" />
+            </button>
+          </a>
         </div>
       </div>
     </div>
