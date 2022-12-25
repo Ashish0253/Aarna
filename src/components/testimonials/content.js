@@ -36,9 +36,9 @@ export const content1 = [
 export const content2 = [
   {
     id: 5,
-    name: "Theresa Mason",
+    name: "Pankaj Bhatt",
     review:
-      "Excellent service and fast results. Makes one feel secure and painless while having blood drawn.",
+      "Diagnostic center provides good facilities to the patient. Staff are very polite and we'll mannered. They are following all the guidelines for the Covid situation as well as maintaining social distance also. My all over experience is good. So I highly recommend for everyone.",
     star: 5,
     source: "Google Review",
   },
@@ -46,7 +46,7 @@ export const content2 = [
     id: 6,
     name: "Andrew Collins",
     review:
-      "Our sample management procedure and cutting edge electronic equipment guarantee that our patients will obtain prompt and reliable results. Aarna is committed to addressing the medical community’s need for affordable tests.",
+      "Best place for diagnosis of tests, to work and train. Neat, clean and properly maintained labs, sterilised instruments. The whole staff is friendly and shows respect to all.Lab technicians are here supportive and have in depth knowledge of the field. Accurate and fast results, no chance of inaccuracy.👍🏻",
     star: 5,
     source: "Google Review",
   },

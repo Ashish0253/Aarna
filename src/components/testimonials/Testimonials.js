@@ -27,7 +27,11 @@ export default function Testimonials() {
               <div className="flex justify-between">
                 <p className="">({item.source})</p>
                 <p className="">
-                  <AiFillStar className="text-yellow-300" /> {item.star}
+                  <AiFillStar className="text-yellow-300 inline" />
+                  <AiFillStar className="text-yellow-300 inline" />
+                  <AiFillStar className="text-yellow-300 inline" />
+                  <AiFillStar className="text-yellow-300 inline" />
+                  <AiFillStar className="text-yellow-300 inline" />
                 </p>
               </div>
             </div>
@@ -43,7 +47,11 @@ export default function Testimonials() {
               <div className="flex justify-between">
                 <p className="">({item.source})</p>
                 <p className="">
-                  <AiFillStar className="text-yellow-300" /> {item.star}
+                  <AiFillStar className="text-yellow-300 inline" />
+                  <AiFillStar className="text-yellow-300 inline" />
+                  <AiFillStar className="text-yellow-300 inline" />
+                  <AiFillStar className="text-yellow-300 inline" />
+                  <AiFillStar className="text-yellow-300 inline" />
                 </p>
               </div>
             </div>
