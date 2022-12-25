@@ -82,7 +82,6 @@ export const content = [
       "LFT",
       "KFT",
       "Urine",
-      "Vit D3",
     ],
     price: 4470,
     offerPrice: 2700,

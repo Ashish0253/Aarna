@@ -2,11 +2,14 @@ import React from "react";
 import { content1, content2 } from "./content";
 import { AiFillStar } from "react-icons/ai";
 
+// transform:
+//     translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg),
+
 export default function Testimonials() {
   return (
     <div className="grid grid-cols-3">
       <div className="m-20 pt-10  left-0">
-        <p className=" rounded-lg border-gray-300 border-2 p-1 flex">
+        <p className="text-center rounded-lg border-gray-300 border-2 py-1 px-0">
           Testimonials
         </p>
         <h1 className="text-4xl font-bold p-6">

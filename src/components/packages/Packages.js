@@ -2,6 +2,7 @@ import React from "react";
 import { content } from "./content";
 import Slider from "react-slick";
 import "./Packages.css";
+// import { AiOutlineArrowLeft } from "react-icons/ai";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -52,25 +53,30 @@ export default function Packages() {
       <Slider {...settings}>
         {content.map((item) => {
           return (
-            <div className="rounded-lg p-10 h-[450px] w-[200px] overflow-hidden shadow-sm border-2 border-transparent bg-white hover:drop-shadow-lg transition ease-out-300">
+            <div className="relative rounded-3xl p-10 h-[480px] w-[200px] overflow-hidden shadow-sm border-2 border-transparent bg-white hover:drop-shadow-lg transition ease-out-300">
               <h1 className="font-bold text-primary text-2xl mb-2">
                 {item.title}
               </h1>
               <div className="text-gray-700 text-base">
-                <ul className="px-6 py-2 list-disc">
-                  {item.tests.map((test) => {
-                    return <li>{test}</li>;
-                  })}
-                </ul>
-                <span className=" font-bold text-md">Normal Price:</span>{" "}
-                <span className="line-through"> {item.price}/-</span>
-                <br></br>
-                <span className="font-bold text-xl">Offer Price:</span>{" "}
-                <span className="text-xl"> {item.offerPrice}/-</span>
-                <br></br>
-                <button className="text-white font-semibold border-transparent border-2 bg-[#fedc00] hover:bg-primary rounded px-4 py-1 hover:scale-110">
-                  Book Now
-                </button>
+                {/* test list start */}
+                <div className="">
+                  <ul className="px-6 py-2 list-disc">
+                    {item.tests.map((test) => {
+                      return <li>{test}</li>;
+                    })}
+                  </ul>
+                </div>
+                {/* price and button start */}
+                <div className=" bottom-2 absolute">
+                  <div className="font-bold text-md">Normal Price:</div>{" "}
+                  <div className="line-through"> {item.price}/-</div>
+                  <div className="font-bold text-xl">Offer Price:</div>{" "}
+                  <div className="text-xl"> {item.offerPrice}/-</div>
+                  <button className=" text-white font-semibold border-transparent border-2 bg-[#fedc00] hover:bg-primary rounded px-4 py-1 hover:scale-110">
+                    Book Now
+                  </button>
+                </div>
+                {/* price and button end */}
               </div>
             </div>
           );
@@ -90,5 +96,3 @@ function SampleArrow(props) {
     />
   );
 }
-
-// mx-10 rounded-lg overflow-hidden shadow-md bg-cover relative p-4 hover:drop-shadow-2xl transition ease-out-300 bg-white
