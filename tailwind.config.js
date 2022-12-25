@@ -3,7 +3,15 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   mode: "jit",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#190e67",
+        secondary: "#1ebaba",
+      },
+      fontFamily: {
+        body: ["Nunito"],
+      },
+    },
   },
   plugins: [],
 };
