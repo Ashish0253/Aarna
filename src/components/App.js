@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="font-body">
       <Header />
-      <Departments />
+      <Carousel/>
       {/* <BodyParts /> */}
       <Packages />
       <Testimonials />
