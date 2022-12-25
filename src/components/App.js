@@ -1,17 +1,21 @@
 import React from "react";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
-import Departments from "./department/Departments";
+// import Departments from "./department/Departments";
 // import Stickyfooter from "./footer/Stickyfooter";
 import Map from "./map/Map";
+import Packages from "./packages/Packages";
+import Testimonials from "./testimonials/Testimonials";
 // import BodyParts from "./bodyParts/BodyParts";
 
 function App() {
   return (
-    <div>
+    <div className="font-body">
       <Header />
-      <Departments />
+      {/* <Departments /> */}
       {/* <BodyParts /> */}
+      <Packages />
+      <Testimonials />
       <Map />
       <Footer />
       {/* <Stickyfooter /> */}
