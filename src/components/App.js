@@ -7,12 +7,13 @@ import Map from "./map/Map";
 import Packages from "./packages/Packages";
 import Testimonials from "./testimonials/Testimonials";
 // import BodyParts from "./bodyParts/BodyParts";
+import Carousel from "./carousel/Carousel";
 
 function App() {
   return (
     <div className="font-body">
       <Header />
-      {/* <Departments /> */}
+      <Carousel/>
       {/* <BodyParts /> */}
       <Packages />
       <Testimonials />
