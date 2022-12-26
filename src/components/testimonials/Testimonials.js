@@ -8,7 +8,7 @@ import { AiFillStar } from "react-icons/ai";
 
 export default function Testimonials() {
   return (
-    <div className="grid grid-cols-3 testimonial">
+    <div className="grid grid-cols-3 mb-5 testimonial">
       <div className="m-20 pt-10  left-0">
         <p className="text-center text-xl font-bold rounded-lg border-gray-300 border-2 py-1 px-0 bg-white">
           Testimonials

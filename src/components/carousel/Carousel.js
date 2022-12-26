@@ -4,11 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import images from "./Images";
 
-/* 
-buttons in carousel
-make new carousel for ultrasound,etc
-do work on styling mainly 
-*/
+
 function Carousel(){
 
     const settings = {
