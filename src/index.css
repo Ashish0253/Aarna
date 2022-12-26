@@ -5,5 +5,10 @@
 @tailwind utilities;
 
 .testimonial {
-    background-image: linear-gradient(to right,#760172, #0CBABA);
+    background-image: linear-gradient(to right,#000a70, #0CBABA);
 }
+
+.packages {
+    background-image: url("./components/packages/bgimg.jpg");
+}
+/* 760172 */

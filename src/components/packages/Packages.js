@@ -48,8 +48,8 @@ export default function Packages() {
   };
 
   return (
-    <div className="p-[100px] bg-[#f0f8ff]">
-      <h1 className="text-center mb-10 text-5xl">Popular Packages</h1>
+    <div className="p-[100px] bg-[#f0f8ff] packages mb-5">
+      <h1 className="text-center mb-10 text-5xl text-white">Popular Packages</h1>
       <Slider {...settings}>
         {content.map((item) => {
           return (

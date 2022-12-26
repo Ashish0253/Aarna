@@ -27,7 +27,7 @@ function Carousel(){
       };
 
     return (
-        <div className="w-full h-full">
+        <div className="w-full h-full px-7 mb-3">
           <Slider {...settings}>
           {
             images.map(item => {
@@ -41,7 +41,7 @@ function Carousel(){
           }
                    
           </Slider>
-          <hr class="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700"/>
+          {/* <hr class="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700"/> */}
 
         </div>
       );
