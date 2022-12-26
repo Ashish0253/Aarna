@@ -9,7 +9,7 @@ import phoneCall from "../../Assets/footer/phone-call.png";
 export default function Footer() {
   return (
     <footer className="font-body">
-      <div className="grid grid-cols-4 gap-0 text-gray-500 bg-white font-semibold p-10">
+      <div className="grid grid-cols-4 gap-0 text-gray-500 bg-white font-semibold py-10 px-20">
         {/* column 1 */}
         <div className="ml-20">
           <img src={Logo} alt="Aarna logo" className="w-[100%] h-auto p-2" />
@@ -98,7 +98,7 @@ export default function Footer() {
         </div>
 
         {/* column 2 */}
-        <div className=" pl-16">
+        <div className="pl-10">
           {/* <h1 className="font-semibold text-3xl m-2 border-b-4 py-4 w-1/3">
             Departments
           </h1> */}
@@ -190,7 +190,10 @@ export default function Footer() {
               Helpline No.
             </h1>
             <ul className="my-4">
-              <li className="font-bold text-3xl text-[#1a0e69] transform hover:scale-110 ease-out duration-300">
+              <li className="font-bold p-1 text-3xl text-[#1a0e69] transform hover:scale-110 ease-out duration-300">
+                <a href="tel:8648808080">8648808080</a>
+              </li>
+              <li className="font-bold p-1 text-3xl text-[#1a0e69] transform hover:scale-110 ease-out duration-300">
                 <a href="tel:0135-2720720">0135-2720720</a>
               </li>
             </ul>
