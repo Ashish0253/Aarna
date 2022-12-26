@@ -7,7 +7,7 @@ import images from "./Images";
 /* 
 buttons in carousel
 make new carousel for ultrasound,etc
-do work on styling mainly of testimonial section
+do work on styling mainly 
 */
 function Carousel(){
 
