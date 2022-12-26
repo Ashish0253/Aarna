@@ -3,3 +3,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.testimonial {
+    background-image: linear-gradient(to right,#000a70, #0CBABA);
+}
+
+.testimonial-card:hover {
+    transform: scale(1.01);
+}
+
+
+.packages {
+    background-image: url("./components/packages/bgimg.jpg");
+  }
+  
