@@ -12,6 +12,7 @@ export default function Navbar() {
             <AiOutlineHome className="inline w-10 h-5" />
           </button>
         </a>
+
         <a href="/" className=" text-lg hover:text-[#23138f] ">
           <button className="transform hover:scale-110 ease-out duration-300">
             Health Packages
