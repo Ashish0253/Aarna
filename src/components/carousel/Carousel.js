@@ -23,7 +23,7 @@ function Carousel(){
       };
 
     return (
-        <div className="w-full h-full px-7 mb-3">
+        <div className="w-full h-full px-7">
           <Slider {...settings}>
           {
             images.map(item => {

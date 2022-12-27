@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .testimonial {
-    background-image: linear-gradient(to right,#000a70, #0CBABA);
+    background-image: linear-gradient(to right,#205295, #0CBABA);
 }
 
 .testimonial-card:hover {
@@ -16,4 +16,11 @@
 .packages {
     background-image: url("./components/packages/bgimg.jpg");
   }
+
+.scan-desc{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
   
