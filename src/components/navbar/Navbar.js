@@ -7,8 +7,8 @@ import "./Navbar.css";
 
 export default function Navbar() {
   return (
-    <div className="bg-[white] font-[1000]">
-      <div className="flex justify-around py-2 px-[170px] text-black font-bold">
+    <div className="bg-[white] font-[1000] sticky top-0 z-[1]  ease-out 200">
+      <div className="flex justify-around px-[170px] pt-3 text-black font-bold">
         <NavItem title="Home" link="/" />
         <NavItem
           title="Health Packages"
@@ -45,17 +45,17 @@ function NavItem(props) {
 
   return (
     <div
-      className="list-none "
+      className="list-none pb-[2px]"
       onMouseEnter={() => setOpen(!open)}
       onMouseLeave={() => setOpen(!open)}
     >
       <a
         href={props.link}
-        className=" text-lg  hover:bg-[#205295] hover:text-white px-6 py-2 rounded-lg "
+        className=" text-lg  hover:hover:bg-[#22138d] hover:text-white px-6 py-[8px] rounded-lg "
 
         // onMouseLeave={() => setOpen(!open)}
       >
-        <button className="h-10 transform hover:scale-[1.05] ease-out duration-300">
+        <button className="h-10 transform ease-out duration-300">
           {props.title}
           {props.icon}
         </button>
@@ -71,7 +71,7 @@ function DropdownMenu(props) {
 
   function DropdownItem(props) {
     return (
-      <a className="menu-item px-6 py-2" href="/#">
+      <a className="menu-item px-6" href="/#">
         {props.children}
       </a>
     );

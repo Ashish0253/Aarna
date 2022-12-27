@@ -10,8 +10,9 @@
 
 .testimonial-card:hover {
   transform: scale(1.01);
+  transition: ease-out 200ms;
 }
 
-.packages {
+/* .packages {
   background-image: url("./components/packages/bgimg.jpg");
-}
+} */

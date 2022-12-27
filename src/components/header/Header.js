@@ -1,13 +1,16 @@
 import React from "react";
 import Logo from "../../Assets/ARNA-LOGO.png";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 
 console.log(Logo);
 
 function Header() {
   return (
     <div className="bg-[#f0f8ff]">
-      <div className="bg-[#EAFDFC]">
+      <div
+        className="bg-[#3464d9]"
+        style={{ backgroundImage: "linear-gradient(to right, white, #3464d9)" }}
+      >
         {/* first row */}
         <div className="flex justify-between">
           <a href="/">
@@ -22,7 +25,6 @@ function Header() {
           </button>
         </div>
       </div>
-      <Navbar />
     </div>
   );
 }

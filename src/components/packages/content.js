@@ -35,12 +35,7 @@ export const content = [
     id: 5,
     title: "Advanced Basic Fever Panel",
     numberOfTests: 6,
-    tests: [
-      "CBC (Complete Blood Count)",
-      "TFT (Thyroid Function Test/ Thyroid Profile)",
-      "LH (Luteinizing Hormone)",
-      "FSH (Follicile Stimulating Hormone)...",
-    ],
+    tests: ["CBC", "TFT ", "LH ", "FSH..."],
     price: 2500,
     offerPrice: 1200,
   },
