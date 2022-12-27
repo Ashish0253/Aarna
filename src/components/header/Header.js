@@ -7,7 +7,7 @@ console.log(Logo);
 function Header() {
   return (
     <div className="bg-[#f0f8ff]">
-      <div className="bg-[#f0f8ff]">
+      <div className="bg-[#EAFDFC]">
         {/* first row */}
         <div className="flex justify-between">
           <a href="/">
@@ -17,7 +17,7 @@ function Header() {
               className="w-[220px] mx-[100px] py-6 cursor-pointer"
             />
           </a>
-          <button className="mx-[100px] my-6 px-10 py-0 border-transparent text-white text-lg font-bold rounded-xl border-2 bg-red-600 hover:shadow-lg transform hover:scale-110 hover:bg-red-600 ease-out duration-500">
+          <button className="mx-[100px] my-6 px-10 py-0 border-transparent bg-primary text-white bg- bg-blu text-lg font-bold rounded-xl border-2  hover:shadow-lg transform hover:text-white hover:scale-110 hover:bg-red-600 ease-out duration-500">
             GET A FREE CALL
           </button>
         </div>

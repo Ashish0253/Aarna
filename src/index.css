@@ -4,16 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.testimonial {
-    background-image: linear-gradient(to right,#000a70, #0CBABA);
-}
+/* .testimonial {
+  background-image: linear-gradient(to right, #205295, #1a0e69);
+} */
 
 .testimonial-card:hover {
-    transform: scale(1.01);
+  transform: scale(1.01);
 }
 
-
 .packages {
-    background-image: url("./components/packages/bgimg.jpg");
-  }
-  
+  background-image: url("./components/packages/bgimg.jpg");
+}

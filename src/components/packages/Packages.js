@@ -48,7 +48,7 @@ export default function Packages() {
   };
 
   return (
-    <div className="p-[100px] bg-[#f0f8ff]">
+    <div className="p-[100px] bg-[#BFEAF5]">
       <h1 className="text-center font-bold mb-10 text-5xl">Popular Packages</h1>
 
       <Slider {...settings}>
