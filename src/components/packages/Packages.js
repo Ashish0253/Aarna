@@ -23,8 +23,8 @@ export default function Packages() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           infinite: true,
           dots: true,
         },
@@ -48,35 +48,33 @@ export default function Packages() {
   };
 
   return (
+  
     <div className="px-[100px] py-[120px] bg-[#BFEAF5]">
       <h1 className="text-center font-bold mb-10 text-5xl">Popular Packages</h1>
 
       <Slider {...settings}>
         {content.map((item) => {
           return (
-            <div className="relative text-white bg-[#205295] rounded-3xl p-10 h-[480px] w-[200px] overflow-hidden shadow-sm border-2 border-transparent hover:drop-shadow-lg transition ease-out-300">
-              <h1 className="abolute top-0 font-bold text-white text-4xl mb-2">
+            <div className="relative rounded-3xl p-10 h-[480px] w-[200px] overflow-hidden shadow-sm border-2 border-transparent bg-white hover:drop-shadow-lg transition ease-out-300">
+              <h1 className="font-bold text-primary text-2xl mb-2">
                 {item.title}
               </h1>
-              <div className="top-[100px]absolute px-2 text-sm font-semibold">
-                Includes: {item.numberOfTests} Tests
-              </div>
-              <div className=" text-base">
+              <div className="text-gray-700 text-base">
                 {/* test list start */}
                 <div className="">
                   <ul className="px-6 py-2 list-disc">
                     {item.tests.map((test) => {
-                      return <li className="p-[1px]">{test}</li>;
+                      return <li>{test}</li>;
                     })}
                   </ul>
                 </div>
-
                 {/* price and button start */}
-                <div className="bottom-4 absolute">
+                <div className=" bottom-2 absolute">
                   <div className="font-bold text-md">Normal Price:</div>{" "}
                   <div className="line-through"> {item.price}/-</div>
                   <div className="font-bold text-xl">Offer Price:</div>{" "}
                   <div className="text-xl"> {item.offerPrice}/-</div>
+
                   <div className="flex justify-around">
                     <button className=" text-white mt-6 font-semibold border-transparent border-2 bg-[gray] hover:bg-red-600 rounded-md px-4 py-1 hover:scale-110 ease-out duration-300">
                       Book Now

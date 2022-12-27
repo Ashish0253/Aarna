@@ -8,7 +8,9 @@ import Packages from "./packages/Packages";
 import Testimonials from "./testimonials/Testimonials";
 // import BodyParts from "./bodyParts/BodyParts";
 import Carousel from "./carousel/Carousel";
+import HealthScans from "./health_scans/HealthScans";
 import Navbar from "./navbar/Navbar";
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
 
       {/* <BodyParts /> */}
       <Packages />
+      <HealthScans/>
       <Testimonials />
       <Map />
       <Footer />

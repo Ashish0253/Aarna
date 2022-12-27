@@ -4,15 +4,25 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* .testimonial {
   background-image: linear-gradient(to right, #205295, #1a0e69);
 } */
+
 
 .testimonial-card:hover {
   transform: scale(1.01);
   transition: ease-out 200ms;
 }
 
+.scan-desc{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
 /* .packages {
   background-image: url("./components/packages/bgimg.jpg");
 } */
+
