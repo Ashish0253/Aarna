@@ -1,0 +1,21 @@
+.slider-arrow {
+  position: absolute;
+  /* display: flex;
+    justify-content: space-between; */
+  height: 200%;
+  width: 100%;
+  top: 50%;
+}
+/* .arrow-btn {
+    top: 0px;
+    z-index: 1;
+  } */
+
+.arrow-btn-prev {
+  float: left;
+  left: px;
+}
+
+.arrow-btn-next {
+  float: right;
+}

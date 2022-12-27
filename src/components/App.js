@@ -8,9 +8,9 @@ import Packages from "./packages/Packages";
 import Testimonials from "./testimonials/Testimonials";
 // import BodyParts from "./bodyParts/BodyParts";
 import Carousel from "./carousel/Carousel";
-import HealthScans from "./health_scans/HealthScans";
+import HealthScans from "./healthScans/HealthScans";
 import Navbar from "./navbar/Navbar";
-
+// import ReactCustomArrow from "./packages/Trial";
 
 function App() {
   return (
@@ -18,10 +18,10 @@ function App() {
       <Header />
       <Navbar />
       <Carousel />
-
+      {/* <ReactCustomArrow /> */}
       {/* <BodyParts /> */}
       <Packages />
-      <HealthScans/>
+      <HealthScans />
       <Testimonials />
       <Map />
       <Footer />
