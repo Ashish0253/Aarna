@@ -48,8 +48,10 @@ export default function Packages() {
   };
 
   return (
-    <div className="p-[100px] bg-[#f0f8ff] packages mb-5">
-      <h1 className="text-center mb-10 text-5xl text-white">Popular Packages</h1>
+  
+    <div className="px-[100px] py-[120px] bg-[#BFEAF5]">
+      <h1 className="text-center font-bold mb-10 text-5xl">Popular Packages</h1>
+
       <Slider {...settings}>
         {content.map((item) => {
           return (
@@ -72,9 +74,15 @@ export default function Packages() {
                   <div className="line-through"> {item.price}/-</div>
                   <div className="font-bold text-xl">Offer Price:</div>{" "}
                   <div className="text-xl"> {item.offerPrice}/-</div>
-                  <button className=" text-white font-semibold border-transparent border-2 bg-[#fedc00] hover:bg-primary rounded px-4 py-1 hover:scale-110">
-                    Book Now
-                  </button>
+
+                  <div className="flex justify-around">
+                    <button className=" text-white mt-6 font-semibold border-transparent border-2 bg-[gray] hover:bg-red-600 rounded-md px-4 py-1 hover:scale-110 ease-out duration-300">
+                      Book Now
+                    </button>
+                    <button className="ml-[120px] text-white mt-6 font-semibold border-transparent border-2 bg-[gray] hover:bg-red-600 rounded-md px-4 py-1 hover:scale-110 ease-out duration-300">
+                      Know More
+                    </button>
+                  </div>
                 </div>
                 {/* price and button end */}
               </div>
@@ -82,6 +90,11 @@ export default function Packages() {
           );
         })}
       </Slider>
+      <div className="flex justify-center mt-20">
+        <button className="bg-[#205295] text-lg font-semibold border-transparent text-white px-10 py-2 rounded-md hover:bg-[#22138d] hover:scale-110 ease-out duration-300">
+          View all
+        </button>
+      </div>
     </div>
   );
 }

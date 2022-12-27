@@ -9,12 +9,16 @@ import Testimonials from "./testimonials/Testimonials";
 // import BodyParts from "./bodyParts/BodyParts";
 import Carousel from "./carousel/Carousel";
 import HealthScans from "./health_scans/HealthScans";
+import Navbar from "./navbar/Navbar";
+
 
 function App() {
   return (
     <div className="font-body">
       <Header />
+      <Navbar />
       <Carousel />
+
       {/* <BodyParts /> */}
       <Packages />
       <HealthScans/>
