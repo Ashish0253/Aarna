@@ -1,21 +1,22 @@
-.slider-arrow {
+.slider-arrow-scans {
   position: absolute;
   /* display: flex;
     justify-content: space-between; */
-  height: 200%;
+  height: 100%;
   width: 100%;
-  top: 50%;
+  top: 40%;
 }
 /* .arrow-btn {
     top: 0px;
     z-index: 1;
   } */
 
-.arrow-btn-prev {
+.arrow-btn-prev-scans {
   float: left;
-  left: px;
+  right: 15px;
 }
 
-.arrow-btn-next {
+.arrow-btn-next-scans {
   float: right;
+  left: 25px;
 }

@@ -6,38 +6,25 @@
   margin: 0 -10px;
 }
 
-.slick-prev:before {
-  content: "<";
-  color: red;
-  font-size: 30px;
-}
-
-.slick-next:before {
-  content: ">";
-  color: red;
-  font-size: 30px;
-}
-
-.slider-arrow {
+.slider-arrow-packages {
   position: absolute;
   /* display: flex;
   justify-content: space-between; */
-  height: 200%;
+  height: 10%;
   width: 100%;
-  top: 50%;
+  top: 45%;
 }
 /* .arrow-btn {
   top: 0px;
   z-index: 1;
 } */
 
-.arrow-btn-prev {
+.arrow-btn-prev-packages {
   z-index: 1;
-
   left: 10px;
 }
 
-.arrow-btn-next {
-  float: right;
+.arrow-btn-next-packages {
   z-index: 1;
+  float: right;
 }

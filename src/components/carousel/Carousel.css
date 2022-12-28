@@ -1,0 +1,18 @@
+.slider-arrow-carousel {
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  top: 50%;
+}
+
+.arrow-btn-prev-carousel {
+  float: left;
+  left: 20px;
+  z-index: 1;
+}
+
+.arrow-btn-next-carousel {
+  float: right;
+  right: 20px;
+  z-index: 1;
+}

@@ -10,6 +10,7 @@ export default function Navbar() {
     <div className="bg-[white] font-[1000] sticky top-0 z-[1]  ease-out 200">
       <div className="flex justify-around px-[170px] pt-3 text-black font-bold">
         <NavItem title="Home" link="/" />
+        <NavItem title="Book a Test" link="/#" />
         <NavItem
           title="Health Packages"
           icon={<RiArrowDropDownLine className="h-10 inline" />}
@@ -32,7 +33,6 @@ export default function Navbar() {
           <DropdownMenu state="scans" />
         </NavItem>
         <NavItem title="Doctors" link="/#" />
-        <NavItem title="Services" link="/#" />
         <NavItem title="Contact Us" link="/#" />
         <NavItem icon={<FaRegUser className="w-5 inline mx-2" />} link="/#" />
       </div>
@@ -51,7 +51,7 @@ function NavItem(props) {
     >
       <a
         href={props.link}
-        className=" text-lg  hover:hover:bg-[#22138d] hover:text-white px-6 py-[8px] rounded-lg "
+        className=" text-lg  hover:bg-[#22138d] hover:text-white px-6 py-[8px] rounded-lg "
 
         // onMouseLeave={() => setOpen(!open)}
       >

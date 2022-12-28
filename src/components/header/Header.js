@@ -9,7 +9,7 @@ function Header() {
     <div className="bg-[#f0f8ff]">
       <div
         className="bg-[#3464d9]"
-        style={{ backgroundImage: "linear-gradient(to right, white, #3464d9)" }}
+        style={{ backgroundImage: "linear-gradient(to right, white, #1ebaba)" }}
       >
         {/* first row */}
         <div className="flex justify-between">

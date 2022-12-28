@@ -16,15 +16,15 @@ export default function Packages() {
 
   function RenderArrows() {
     return (
-      <div className="slider-arrow">
+      <div className="slider-arrow-packages">
         <ButtonBase
-          className="arrow-btn-prev"
+          className="arrow-btn-prev-packages"
           onClick={() => slider?.current?.slickPrev()}
         >
           <ArrowBackIosIcon fontSize="large" sx={{ color: "white" }} />
         </ButtonBase>
         <ButtonBase
-          className="arrow-btn-next"
+          className="arrow-btn-next-packages"
           onClick={() => slider?.current?.slickNext()}
         >
           <ArrowForwardIosIcon fontSize="large" sx={{ color: "white" }} />
@@ -121,7 +121,7 @@ export default function Packages() {
         </Slider>
       </div>
       <div className="flex justify-center mt-20">
-        <button className="bg-[#205295] text-lg font-semibold border-transparent text-white px-10 py-2 rounded-md hover:bg-[#22138d] hover:scale-110 ease-out duration-300">
+        <button className="z-[1] bg-[#205295] text-lg font-semibold border-transparent text-white px-10 py-2 rounded-md hover:bg-[#22138d] hover:scale-110 ease-out duration-300">
           View all
         </button>
       </div>

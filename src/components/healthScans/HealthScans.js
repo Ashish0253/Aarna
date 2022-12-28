@@ -15,15 +15,15 @@ function HealthScans() {
 
   function RenderArrows() {
     return (
-      <div className="slider-arrow ">
+      <div className="slider-arrow-scans">
         <ButtonBase
-          className="arrow-btn-prev"
+          className="arrow-btn-prev-scans"
           onClick={() => slider?.current?.slickPrev()}
         >
           <ArrowBackIosIcon fontSize="large" sx={{ color: "black" }} />
         </ButtonBase>
         <ButtonBase
-          className="arrow-btn-next"
+          className="arrow-btn-next-scans"
           onClick={() => slider?.current?.slickNext()}
         >
           <ArrowForwardIosIcon fontSize="large" sx={{ color: "black" }} />
@@ -81,22 +81,29 @@ function HealthScans() {
           {content.map((item) => {
             return (
               <div className="rounded-xl overflow-hidden text-center text-black bg-white pb-5">
-                <img
-                  src={item.src}
-                  alt={item.alt}
-                  className="border-b-4 border-[#0aa1af]"
-                />
-                <h3 className="py-3 font-bold text-xl text-[#190e67]">
-                  {item.title}
-                </h3>
-                <h3 className="font-bold text-lg text-[#0aa1af]">
-                  {item.price}
-                  <span className="line-through	font-light">
-                    {item.price2}
-                  </span>{" "}
-                  {item.price3}
-                </h3>
-                <p className="p-5 scan-desc">{item.description}</p>
+                <a href="/#">
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    className="border-b-4 border-[#0aa1af]"
+                  />
+                  <h3 className="py-3 font-bold text-xl text-[#190e67]">
+                    {item.title}
+                  </h3>
+                  <h3 className="font-bold text-lg text-[#0aa1af]">
+                    {item.price}
+                    <span className="line-through	font-light">
+                      {item.price2}
+                    </span>{" "}
+                    {item.price3}
+                  </h3>
+                  {/* <p className="p-5 scan-desc">{item.description}</p> */}
+                </a>
+                <div className="border-transparent rounded-lg px-4 py-1 mt-4 border-2 bg-[#1ebaba] text-white">
+                  <button className="border-transparent rounded-lg border-2 text-white">
+                    Book Now
+                  </button>
+                </div>
               </div>
             );
           })}

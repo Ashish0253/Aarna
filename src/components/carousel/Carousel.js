@@ -2,30 +2,33 @@ import React from "react";
 import Slider from "react-slick";
 
 import images from "./Images";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+// import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+// import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
+import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
 import { ButtonBase } from "@mui/material";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./Carousel.css";
 
 export default function Carousel() {
   const slider = React.useRef(null);
 
   function RenderArrows() {
     return (
-      <div className="slider-arrow">
+      <div className="slider-arrow-carousel">
         <ButtonBase
-          className="arrow-btn-prev"
+          className="arrow-btn-prev-carousel"
           onClick={() => slider?.current?.slickPrev()}
         >
-          <ArrowBackIosIcon fontSize="large" sx={{ color: "black" }} />
+          <ArrowCircleLeftIcon fontSize="large" sx={{ color: "black" }} />
         </ButtonBase>
         <ButtonBase
-          className="arrow-btn-next"
+          className="arrow-btn-next-carousel"
           onClick={() => slider?.current?.slickNext()}
         >
-          <ArrowForwardIosIcon fontSize="large" sx={{ color: "black" }} />
+          <ArrowCircleRightIcon fontSize="large" sx={{ color: "black" }} />
         </ButtonBase>
       </div>
     );
@@ -48,7 +51,7 @@ export default function Carousel() {
   };
 
   return (
-    <div className="w-full h-full px-0 mb-3">
+    <div className="w-full h-full px-0 ">
       <div className="relative">
         <RenderArrows />
         <Slider ref={slider} {...settings}>
