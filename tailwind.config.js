@@ -9,7 +9,8 @@ module.exports = {
         secondary: "#1ebaba",
       },
       fontFamily: {
-        body: ["Nunito"],
+        body: "'Quicksand', sans-serif",
+        temp: ["Nunito"],
       },
     },
   },

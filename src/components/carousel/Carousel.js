@@ -19,7 +19,7 @@ export default function Carousel() {
     return (
       <div className="slider-arrow-carousel">
         <ButtonBase
-          className="arrow-btn-prev-carousel"
+          className="arrow-btn-prev-carousel "
           onClick={() => slider?.current?.slickPrev()}
         >
           <ArrowCircleLeftIcon fontSize="large" sx={{ color: "black" }} />
@@ -38,13 +38,12 @@ export default function Carousel() {
     dots: false,
     infinite: true,
     arrows: false,
-    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     fade: false,
     // eslint-disable-next-line no-dupe-keys
-    speed: 1500,
+    speed: 700,
     autoplaySpeed: 5000,
     cssEase: "linear",
     pauseOnHover: false,

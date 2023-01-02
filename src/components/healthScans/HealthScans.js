@@ -71,8 +71,8 @@ function HealthScans() {
   };
 
   return (
-    <div className="bg-[#f8f8f8] p-20 pb-32">
-      <h1 className="text-center mb-10 text-5xl text-[#0aa1af]">
+    <div className="bg-[#fff] p-20 pb-32">
+      <h1 className="text-center mb-20 text-5xl font-bold text-black">
         Health Scans
       </h1>
       <div className="relative mx-[116px]">
@@ -99,11 +99,13 @@ function HealthScans() {
                   </h3>
                   {/* <p className="p-5 scan-desc">{item.description}</p> */}
                 </a>
-                <div className="border-transparent rounded-lg px-4 py-1 mt-4 border-2 bg-[#1ebaba] text-white">
-                  <button className="border-transparent rounded-lg border-2 text-white">
-                    Book Now
-                  </button>
-                </div>
+                <button className=" mt-6 border-transparent rounded-lg px-4 py-1 border-2 bg-[#1ebaba] text-white ">
+                  Book Now
+                </button>
+
+                {/* <div className="border-transparent rounded-lg px-4 py-1 mt-4 border-2 bg-[#1ebaba] text-white hover:scale-105">
+                  
+                </div> */}
               </div>
             );
           })}

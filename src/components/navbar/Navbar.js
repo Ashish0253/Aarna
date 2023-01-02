@@ -7,7 +7,7 @@ import "./Navbar.css";
 
 export default function Navbar() {
   return (
-    <div className="bg-[white] font-[1000] sticky top-0 z-[1]  ease-out 200">
+    <div className="bg-[white] font-[1000] sticky top-0 z-[2]  ease-out 200">
       <div className="flex justify-around px-[170px] pt-3 text-black font-bold">
         <NavItem title="Home" link="/" />
         <NavItem title="Book a Test" link="/#" />

@@ -74,8 +74,10 @@ export default function Packages() {
   };
 
   return (
-    <div className="px-[100px] py-[120px] bg-[#BFEAF5]">
-      <h1 className="text-center font-bold mb-10 text-5xl">Popular Packages</h1>
+    <div className="px-[100px] pb-[120px] pt-5 bg-white">
+      <div className="m-10">
+        <h1 className="text-center font-bold text-5xl">Popular Packages</h1>
+      </div>
       <div className="relative">
         <RenderArrows />
         <Slider ref={slider} {...settings}>

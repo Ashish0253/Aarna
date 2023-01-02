@@ -5,24 +5,30 @@ import flask from "../../Assets/feature/flask.png";
 
 export default function Feature() {
   return (
-    <div className=" px-20 py-10 mx-20 grid grid-cols-3 border-2 border-black">
-      <div className="">
-        <div className="flex justify-center hover:scale-125 transition ease-out 300">
-          <img src={map} alt="location" className="w-20" />
-        </div>
-        <h1 className="text-2xl text-center">Locate Nearest Centre</h1>
+    <div className="px-[200px] py-10 grid grid-cols-3 bg-[#205295] text-white">
+      <div className="py-6 mx-2 rounded-md border-2 border-white">
+        <a href="/#">
+          <div className="flex justify-center hover:scale-[1.20] transition ease-out 300">
+            <img src={map} alt="location" className="w-20" />
+          </div>
+          <h1 className="text-2xl text-center">Locate Nearest Centre</h1>
+        </a>
       </div>
-      <div className="">
-        <div className="flex justify-center hover:scale-125 transition ease-out 300">
-          <img src={flask} alt="flask" className="w-20" />
-        </div>
-        <h1 className="text-2xl text-center">Book a Test</h1>
+      <div className="py-6 mx-2 rounded-md border-2 border-white">
+        <a href="/#">
+          <div className="flex justify-center hover:scale-[1.20] transition ease-out 300">
+            <img src={flask} alt="flask" className="w-20" />
+          </div>
+          <h1 className="text-2xl text-center">Book a Test</h1>
+        </a>
       </div>
-      <div className="">
-        <div className="flex justify-center hover:scale-125 transition ease-out 300">
-          <img src={prescription} alt="prescription" className="w-20" />
-        </div>
-        <h1 className="text-2xl text-center">Upload Prescription</h1>
+      <div className="py-6 mx-2 rounded-md border-2 border-white">
+        <a href="/#">
+          <div className="flex justify-center hover:scale-[1.20] transition ease-out 300">
+            <img src={prescription} alt="prescription" className="w-20" />
+          </div>
+          <h1 className="text-2xl text-center">Upload Prescription</h1>
+        </a>
       </div>
     </div>
   );
