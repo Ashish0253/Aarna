@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-// import { AiOutlineHome } from "react-icons/ai";
+import { Link } from "react-router-dom";
+
 import { FaRegUser } from "react-icons/fa";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { CSSTransition } from "react-transition-group";
@@ -49,8 +50,8 @@ function NavItem(props) {
       onMouseEnter={() => setOpen(!open)}
       onMouseLeave={() => setOpen(!open)}
     >
-      <a
-        href={props.link}
+      <Link
+        to={props.link}
         className=" text-lg  hover:bg-[#22138d] hover:text-white px-6 py-[8px] rounded-lg "
 
         // onMouseLeave={() => setOpen(!open)}
@@ -59,7 +60,7 @@ function NavItem(props) {
           {props.title}
           {props.icon}
         </button>
-      </a>
+      </Link>
 
       {open && props.children}
     </div>

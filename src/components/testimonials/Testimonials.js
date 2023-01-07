@@ -8,7 +8,7 @@ import "./Testimonials.css";
 
 export default function Testimonials() {
   return (
-    <div className="grid grid-cols-3 bg-[#f8f8f8]  testimonial">
+    <div className="grid grid-cols-3 testimonial">
       <div className="m-20 pt-10  left-0">
         <p className="text-center text-xl font-bold rounded-lg border-gray-300 border-2 py-1 px-0 bg-white">
           Testimonials
@@ -22,7 +22,7 @@ export default function Testimonials() {
       <div className="p-4 pt-[200px] ml-10">
         {content1.map((item) => {
           return (
-            <div className="page border-blue-700 text-white rounded-md border-t-4 shadow-xl mb-10 p-8 bg-[#205295] testimonial-card">
+            <div className="page border-blue-700 text-white rounded-md border-t-4 shadow-xl mb-10 p-8 bg-[#4B56D2] testimonial-card">
               <p className="text-center p-2">{item.review}</p>
               <h1 className="text-left border-t-2 pt-8">{item.name}</h1>
               <div className="flex justify-between">
