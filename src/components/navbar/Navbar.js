@@ -34,7 +34,7 @@ export default function Navbar() {
           <DropdownMenu state="scans" />
         </NavItem>
         <NavItem title="Doctors" link="/#" />
-        <NavItem title="Contact Us" link="/#" />
+        <NavItem title="Contact Us" link="/contactus" />
         <NavItem icon={<FaRegUser className="w-5 inline mx-2" />} link="/#" />
       </div>
     </div>

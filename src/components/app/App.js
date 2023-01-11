@@ -13,6 +13,8 @@ import Navbar from "../navbar/Navbar";
 import Feature from "../feature/Feature";
 import WhyChooseUs from "../whyChooseUs/WhyChooseUs";
 
+import ContactUs from "../contactUs/ContactUs";
+
 function App() {
   return (
     <Router>
@@ -21,7 +23,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          {/* <Route exact path="/check" element={<Packages />} /> */}
+          <Route exact path="/contactus" element={<ContactUs />} />
         </Routes>
         <Footer />
       </div>
