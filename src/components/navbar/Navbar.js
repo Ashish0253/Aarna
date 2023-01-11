@@ -11,7 +11,7 @@ export default function Navbar() {
     <div className="bg-[white] font-[1000] sticky top-0 z-[2]  ease-out 200">
       <div className="flex justify-around px-[170px] pt-3 text-black font-bold">
         <NavItem title="Home" link="/" />
-        <NavItem title="Book a Test" link="/#" />
+        <NavItem title="Book a Test" link="/bookatest" />
         <NavItem
           title="Health Packages"
           icon={<RiArrowDropDownLine className="h-10 inline" />}
@@ -33,7 +33,7 @@ export default function Navbar() {
         >
           <DropdownMenu state="scans" />
         </NavItem>
-        <NavItem title="Doctors" link="/#" />
+        <NavItem title="Doctors" link="/doctors" />
         <NavItem title="Contact Us" link="/contactus" />
         <NavItem icon={<FaRegUser className="w-5 inline mx-2" />} link="/#" />
       </div>
@@ -53,8 +53,6 @@ function NavItem(props) {
       <Link
         to={props.link}
         className=" text-lg  hover:bg-[#22138d] hover:text-white px-6 py-[8px] rounded-lg "
-
-        // onMouseLeave={() => setOpen(!open)}
       >
         <button className="h-10 transform ease-out duration-300">
           {props.title}
@@ -72,9 +70,9 @@ function DropdownMenu(props) {
 
   function DropdownItem(props) {
     return (
-      <a className="menu-item px-6" href="/#">
+      <Link className="menu-item px-6" to={props.link}>
         {props.children}
-      </a>
+      </Link>
     );
   }
 
@@ -87,17 +85,17 @@ function DropdownMenu(props) {
         classNames="menu-primary"
       >
         <div>
-          <DropdownItem>Radiology</DropdownItem>
-          <DropdownItem>Pathology</DropdownItem>
+          <DropdownItem link="/radiology">Radiology</DropdownItem>
+          <DropdownItem link="/pathology">Pathology</DropdownItem>
         </div>
       </CSSTransition>
 
       <CSSTransition in={props.state === "scans"} unmountOnExit timeout={500}>
         <div>
-          <DropdownItem>CT Scan</DropdownItem>
-          <DropdownItem>UltraSound</DropdownItem>
-          <DropdownItem>Digital X-Ray</DropdownItem>
-          <DropdownItem>ECG Test</DropdownItem>
+          <DropdownItem link="/ctscan">CT Scan</DropdownItem>
+          <DropdownItem link="/ultrasound">UltraSound</DropdownItem>
+          <DropdownItem link="/digitalxray">Digital X-Ray</DropdownItem>
+          <DropdownItem link="/ecgtest">ECG Test</DropdownItem>
         </div>
       </CSSTransition>
 
