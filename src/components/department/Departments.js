@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Department.css";
 import { content } from "./content";
 // import { Propane } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 export default function Department() {
   const [isPathologyOpen, setPathologyOpen] = useState(false);
@@ -18,32 +19,35 @@ export default function Department() {
   }
 
   return (
-    <div className="p-10 bg-[#f8f8f8]">
-      <h1 className="flex justify-center font-bold text-5xl p-10">
+    <div className="p-10 bg-[#1a0e69] watermark">
+      <div className="flex justify-center font-bold text-5xl text-[#1ebaba] p-10 z-10">
         Our Departments
-      </h1>
-      <div className="grid grid-cols-3">
-        <div className=" justify-start grid grid-rows-2">
-          {content.map((data) => {
-            return (
-              <div
-                key={data.id}
-                onMouseEnter={() => handleMouseOver(data.id)}
-                className="m-2 p-7 w-[300px] text-center bg-[#205295] border-white rounded-lg border-2 hover:shadow-lg hover:scale-105 transition ease-out 300"
-              >
-                <div className="flex justify-center ">
-                  <img src={data.img} alt="img" className="w-[100px]"></img>
-                </div>
-                <h1 className="font-bold pt-10 text-2xl text-white">
-                  {" "}
-                  {data.title}{" "}
-                </h1>
-                {/* <p> {data.content} </p> */}
-              </div>
-            );
-          })}
+      </div>
+      <div className="">
+        <div className="flex justify-center">
+          <div className="grid grid-cols-2 z-[1]">
+            {content.map((data) => {
+              return (
+                <Link
+                  to={data.link}
+                  key={data.id}
+                  onMouseEnter={() => handleMouseOver(data.id)}
+                  className="m-2 p-7 py-20 w-[300px] text-center bg-white border-transparent rounded-lg border-2 hover:shadow-lg hover:scale-105 transition ease-out 300"
+                >
+                  <div className="flex justify-center ">
+                    <img src={data.img} alt="img" className="w-[150px]"></img>
+                  </div>
+                  <h1 className="font-bold mt-20 text-3xl text-[#1a0e69]">
+                    {" "}
+                    {data.title}{" "}
+                  </h1>
+                  {/* <p> {data.content} </p> */}
+                </Link>
+              );
+            })}
+          </div>
         </div>
-        <div className="grid col-span-2 rounded border-black">
+        <div className=" rounded border-black text-white z-[1]">
           <div className="text-center p-4">
             {isPathologyOpen && <Pathology />}{" "}
             {isRadiologyOpen && <Radiology />}{" "}

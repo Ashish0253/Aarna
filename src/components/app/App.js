@@ -19,18 +19,20 @@ import BookTest from "../bookatest/BookTest";
 
 import Doctors from "../doctors/Doctors";
 
-import Radiology from "../radiology/Radiology";
-import Pathology from "../pathology/Pathology";
+import Radiology from "../department/Radiology";
+import Pathology from "../department/Pathology";
 
-import CTScan from "../ctScan/CTScan";
-import Ultrasound from "../ultrasound/Ultrasound";
-import DigitalXRay from "../digitalXray/DigitalXRay";
-import ECGTest from "../ecgTest/ECGTest";
+import CTScan from "../scans/CTScan";
+import Ultrasound from "../scans/Ultrasound";
+import DigitalXRay from "../scans/DigitalXRay";
+import ECGTest from "../scans/ECGTest";
 
 import UrineTest from "../healthPackages/UrineTest";
 import ArthritisTest from "../healthPackages/ArthritisTest";
 import ThyroidTest from "../healthPackages/ThyroidTest";
 import DiabetesTest from "../healthPackages/DiabetesTest";
+
+import UploadPre from "../feature/UploadPre";
 
 function App() {
   return (
@@ -56,6 +58,8 @@ function App() {
           <Route exact path="/arthritistest" element={<ArthritisTest />} />
           <Route exact path="/thyroidtest" element={<ThyroidTest />} />
           <Route exact path="/diabetestest" element={<DiabetesTest />} />
+
+          <Route exact path="/uploadprescription" element={<UploadPre />} />
         </Routes>
         <Footer />
       </div>

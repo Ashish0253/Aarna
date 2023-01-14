@@ -8,8 +8,8 @@ import "./Navbar.css";
 
 export default function Navbar() {
   return (
-    <div className="bg-[white] font-[1000] sticky top-0 z-[2]  ease-out 200">
-      <div className="flex justify-around px-[170px] pt-3 text-black font-bold">
+    <div className="bg-[#f8f8f8] font-[1000] sticky top-0 z-10  ease-out 200">
+      <div className="flex justify-around px-[170px] pt-3 text-black font-semibold">
         <NavItem title="Home" link="/" />
         <NavItem title="Book a Test" link="/bookatest" />
         <NavItem
@@ -105,10 +105,10 @@ function DropdownMenu(props) {
         timeout={500}
       >
         <div>
-          <DropdownItem>Urine Test</DropdownItem>
-          <DropdownItem>Arthritis Test</DropdownItem>
-          <DropdownItem>Thyroid Test</DropdownItem>
-          <DropdownItem>Diabetes Test</DropdownItem>
+          <DropdownItem link="/urinetest">Urine Test</DropdownItem>
+          <DropdownItem link="/arthritistest">Arthritis Test</DropdownItem>
+          <DropdownItem link="/thyroidtest">Thyroid Test</DropdownItem>
+          <DropdownItem link="/diabetestest">Diabetes Test</DropdownItem>
         </div>
       </CSSTransition>
     </div>

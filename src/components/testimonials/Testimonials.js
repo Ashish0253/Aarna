@@ -8,23 +8,28 @@ import "./Testimonials.css";
 
 export default function Testimonials() {
   return (
-    <div className="grid grid-cols-3 testimonial">
+    <div className="grid grid-cols-3 testimonial bg-[#f8f8f8]">
       <div className="m-20 pt-10  left-0">
-        <p className="text-center text-xl font-bold rounded-lg border-gray-300 border-2 py-1 px-0 bg-white">
-          Testimonials
-        </p>
-        <h1 className="text-4xl font-bold p-6 text-blue-500">
-          What <br></br> Customers are <br></br>saying about <br></br>Aarna{" "}
-          <br></br>
-          Diagnostics
-        </h1>
+        <div className="sticky top-[10px]">
+          <p className="text-center text-xl font-bold rounded-lg border-gray-300 border-2 py-1 px-0 bg-white">
+            Testimonials
+          </p>
+
+          <h1 className="text-4xl font-bold p-6 text-[#1ebaba]">
+            What <br></br> Customers are <br></br>saying about <br></br>Aarna{" "}
+            <br></br>
+            Diagnostics
+          </h1>
+        </div>
       </div>
       <div className="p-4 pt-[200px] ml-10">
         {content1.map((item) => {
           return (
-            <div className="page border-blue-700 text-white rounded-md border-t-4 shadow-xl mb-10 p-8 bg-[#4B56D2] testimonial-card">
+            <div className="page border-[#1ebaba] text-white rounded-md border-t-4 shadow-xl mb-10 p-8 bg-[#1a0e69] bg-opacity-95 testimonial-card">
               <p className="text-center p-2">{item.review}</p>
-              <h1 className="text-left border-t-2 pt-8">{item.name}</h1>
+              <h1 className="text-left border-[#1ebaba] border-t-2 pt-8">
+                {item.name}
+              </h1>
               <div className="flex justify-between">
                 <p className="">({item.source})</p>
                 <p className="">
@@ -42,9 +47,11 @@ export default function Testimonials() {
       <div className="p-10 pt-[100px]">
         {content2.map((item) => {
           return (
-            <div className=" border-blue-700 text-white rounded-md border-t-4 shadow-xl mb-10 p-8 bg-[#205295] testimonial-card">
+            <div className=" border-[#1ebaba] text-white rounded-md border-t-4 shadow-xl mb-10 p-8 bg-[#1a0e69] bg-opacity-95 testimonial-card">
               <p className="text-center p-2">{item.review}</p>
-              <h1 className="text-left border-t-2 pt-8">{item.name}</h1>
+              <h1 className="text-left border-[#1ebaba] border-t-2 pt-8">
+                {item.name}
+              </h1>
               <div className="flex justify-between">
                 <p className="">({item.source})</p>
                 <p className="">

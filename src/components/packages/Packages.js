@@ -75,7 +75,7 @@ export default function Packages() {
 
   return (
     <div className="px-[100px] pb-[120px] pt-5 bg-white">
-      <div className="m-10">
+      <div className="m-10 pb-5">
         <h1 className="text-center font-bold text-5xl">Popular Packages</h1>
       </div>
       <div className="relative">
@@ -83,7 +83,10 @@ export default function Packages() {
         <Slider ref={slider} {...settings}>
           {content.map((item) => {
             return (
-              <div className="relative text-white bg-[#205295] rounded-3xl p-10 h-[480px] w-[200px] overflow-hidden shadow-sm border-2 border-transparent hover:drop-shadow-lg transition ease-out-300">
+              <div
+                id="trial"
+                className="relative text-white bg-[#1a0e69] bg-opacity-95 rounded-3xl p-10 h-[480px] w-[200px] overflow-hidden shadow-sm border-2 border-transparent hover:drop-shadow-lg transition ease-out-300"
+              >
                 <h1 className="abolute top-0 font-bold text-white text-4xl mb-2">
                   {item.title}
                 </h1>
@@ -107,10 +110,10 @@ export default function Packages() {
                     <div className="font-bold text-xl">Offer Price:</div>{" "}
                     <div className="text-xl"> {item.offerPrice}/-</div>
                     <div className="flex justify-around">
-                      <button className=" text-white mt-6 font-semibold border-transparent border-2 bg-[gray] hover:bg-red-600 rounded-md px-4 py-1 hover:scale-110 ease-out duration-300">
+                      <button className=" text-white mt-6 font-semibold border-white border-2  hover:bg-white hover:text-black rounded-md px-4 py-1 hover:scale-110 ease-out duration-300">
                         Book Now
                       </button>
-                      <button className="ml-[120px] text-white mt-6 font-semibold border-transparent border-2 bg-[gray] hover:bg-red-600 rounded-md px-4 py-1 hover:scale-110 ease-out duration-300">
+                      <button className="ml-[120px] text-white mt-6 font-semibold border-white border-2 hover:bg-white hover:text-black rounded-md px-4 py-1 hover:scale-110 ease-out duration-300">
                         Know More
                       </button>
                     </div>
@@ -123,7 +126,7 @@ export default function Packages() {
         </Slider>
       </div>
       <div className="flex justify-center mt-20">
-        <button className="z-[1] bg-[#205295] text-lg font-semibold border-transparent text-white px-10 py-2 rounded-md hover:bg-[#22138d] hover:scale-110 ease-out duration-300">
+        <button className="z-[1]  text-lg font-semibold border-2 border-primary text-primary px-10 py-2 rounded-md hover:text-white hover:bg-primary hover:scale-110 ease-out duration-300">
           View all
         </button>
       </div>

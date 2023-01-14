@@ -6,10 +6,12 @@ import twitter from "../../Assets/footer/twitter.png";
 import facebook from "../../Assets/footer/facebook.png";
 import phoneCall from "../../Assets/footer/phone-call.png";
 
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer className="font-body">
-      <div className="grid grid-cols-4 gap-0 text-gray-500 bg-white font-semibold py-10 px-20">
+      <div className="grid grid-cols-4 gap-0 text-gray-500 bg-white font-semibold pt-10 pb-2 px-20">
         {/* column 1 */}
         <div className="ml-20">
           <img src={Logo} alt="Aarna logo" className="w-[100%] h-auto p-2" />
@@ -162,11 +164,11 @@ export default function Footer() {
               </a>
             </li>
             <li className="mb-4">
-              <a href="/" className="hover:text-[#1a0e69] ">
+              <Link to="/contactus" className="hover:text-[#1a0e69] ">
                 <button className="transform hover:scale-110 ease-out duration-300">
                   Contact Us
                 </button>
-              </a>
+              </Link>
             </li>
             <li className="mb-4 ">
               <a href="/" className="hover:text-[#1a0e69] ">

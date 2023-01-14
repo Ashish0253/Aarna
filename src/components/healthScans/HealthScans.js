@@ -71,7 +71,7 @@ function HealthScans() {
   };
 
   return (
-    <div className="bg-[#fff] p-20 pb-32">
+    <div className="bg-[#f8f8f8] p-20 pb-32">
       <h1 className="text-center mb-20 text-5xl font-bold text-black">
         Health Scans
       </h1>

@@ -39,7 +39,7 @@ export const content2 = [
   },
   {
     id: 2,
-    heading: "15",
+    heading: "5",
     body: "Medical Specialist",
     img: doctor,
   },
