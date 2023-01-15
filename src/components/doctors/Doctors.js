@@ -4,18 +4,22 @@ import content from "./doc_data";
 
 export default function Doctors() {
   return (
-    <div className="pt-20 px-32">
+    <div className="pt-20 px-28">
       <h1 className="text-center mb-20 text-5xl font-bold text-black">
         Our Doctors
       </h1>
 
-      <div className="">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-5 place-items-center">
         {content.map((item) => {
           return (
-            <div className="inline-block rounded-xl overflow-hidden mx-1 mb-4 bg-slate-900">
+            <div className="rounded-xl pb-3 overflow-hidden bg-slate-900">
               <div>
                 <a href="">
-                  <img src={item.src} alt={item.id} className="h-96 w-80" />
+                  <img
+                    src={item.src}
+                    alt={item.id}
+                    className="h-32 sm:h-64 md:h-96 w-full"
+                  />
                 </a>
               </div>
               <div className="p-3">
@@ -27,7 +31,8 @@ export default function Doctors() {
                 </p>
                 <a
                   href={item.linkedin}
-                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  class="inline-flex items-center px-3 py-1 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  style={{ marginLeft: "35%" }}
                 >
                   LinkedIn
                   <svg
