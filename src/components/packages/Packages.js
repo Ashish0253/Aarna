@@ -74,7 +74,7 @@ export default function Packages() {
   };
 
   return (
-    <div className="px-[100px] pb-[120px] pt-5 bg-white">
+    <div className="px-[100px] pb-[120px] pt-5 bg-[#f8f8f8]">
       <div className="m-10 pb-5">
         <h1 className="text-center font-bold text-5xl">Popular Packages</h1>
       </div>

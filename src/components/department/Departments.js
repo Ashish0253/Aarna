@@ -32,7 +32,7 @@ export default function Department() {
                   to={data.link}
                   key={data.id}
                   onMouseEnter={() => handleMouseOver(data.id)}
-                  className="m-2 p-7 py-20 w-[300px] text-center bg-white border-transparent rounded-lg border-2 hover:shadow-lg hover:scale-105 transition ease-out 300"
+                  className="m-5 p-7 py-20 w-[300px] text-center bg-white border-transparent rounded-lg border-2 hover:shadow-lg hover:scale-105 transition ease-out 300"
                 >
                   <div className="flex justify-center ">
                     <img src={data.img} alt="img" className="w-[150px]"></img>

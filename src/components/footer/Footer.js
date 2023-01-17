@@ -11,16 +11,16 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="font-body">
-      <div className="grid grid-cols-4 gap-0 text-gray-500 bg-white font-semibold pt-10 pb-2 px-20">
+      <div className="lg:grid lg:grid-cols-4 gap-0 text-gray-500 bg-white font-semibold pt-10 pb-2">
         {/* column 1 */}
         <div className="ml-20">
-          <img src={Logo} alt="Aarna logo" className="w-[100%] h-auto p-2" />
+          <img src={Logo} alt="Aarna logo" className="w-[40%] p-2" />
 
           <ul>
-            <li className="m-4 text-sm font-bold pb-6">
+            {/* <li className="m-4 text-sm font-bold pb-6">
               Aarna is committed to addressing the medical community’s evolving
               and ever increasing diagnostic needs.
-            </li>
+            </li> */}
             <li className="m-4 font-bold transform hover:scale-110 ease-out duration-300">
               <svg
                 className="inline w-5 m-1"
@@ -144,7 +144,7 @@ export default function Footer() {
         </div>
 
         {/* column 3 */}
-        <div className="mr-16">
+        <div className="pl-10">
           {/* <h1 className="font-semibold text-3xl m-2 border-b-4 py-4 w-3/5">
             Quick Links
           </h1> */}

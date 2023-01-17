@@ -1,7 +1,7 @@
 import React from "react";
-import map from "../../Assets/feature/map.png";
-import prescription from "../../Assets/feature/prescription.png";
-import flask from "../../Assets/feature/flask.png";
+import map from "../../Assets/feature/map.svg";
+import prescription from "../../Assets/feature/pills.svg";
+import flask from "../../Assets/feature/beaker.svg";
 import { Link } from "react-router-dom";
 
 export default function Feature() {
@@ -27,11 +27,11 @@ export default function Feature() {
   }
 
   return (
-    <div className="px-[275px] py-5 grid grid-cols-3 bg-[#1ebaba] font-semibold">
+    <div className="px-[275px] py-5 grid grid-cols-3 bg-primary bg-opacity-95 font-semibold">
       <div className="py-6 mx-2 rounded-md border-2 border-white">
         <Link to="/#" onClick={handleLocation}>
           <div className="flex justify-center hover:scale-[1.20] transition ease-out 300">
-            <img src={map} alt="location" className="w-20" />
+            <img src={map} alt="location" className="w-[160px]" />
           </div>
           <h1 className="text-2xl text-center text-white">Nearest Centre</h1>
         </Link>

@@ -42,7 +42,7 @@ export default function Carousel() {
     autoplay: true,
     fade: false,
     // eslint-disable-next-line no-dupe-keys
-    speed: 1500,
+    // speed: 750,
     autoplaySpeed: 5000,
     cssEase: "linear",
     pauseOnHover: false,
@@ -57,6 +57,7 @@ export default function Carousel() {
             return (
               <div>
                 <img
+                  key={item.id}
                   src={item.source}
                   alt="images"
                   className="rounded-md h-[600px] w-full"

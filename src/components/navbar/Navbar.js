@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { FaRegUser } from "react-icons/fa";
-import { RiArrowDropDownLine } from "react-icons/ri";
+// import { RiArrowDropDownLine } from "react-icons/ri";
 import { CSSTransition } from "react-transition-group";
 import "./Navbar.css";
 
@@ -14,21 +14,21 @@ export default function Navbar() {
         <NavItem title="Book a Test" link="/bookatest" />
         <NavItem
           title="Health Packages"
-          icon={<RiArrowDropDownLine className="h-10 inline" />}
+          // icon={<RiArrowDropDownLine className="h-10 inline" />}
           link="/#"
         >
           <DropdownMenu state="packages" />
         </NavItem>
         <NavItem
           title="Departments"
-          icon={<RiArrowDropDownLine className="h-10 inline" />}
+          // icon={<RiArrowDropDownLine className="h-10 inline" />}
           link="/#"
         >
           <DropdownMenu state="departments" />
         </NavItem>
         <NavItem
           title="Scans"
-          icon={<RiArrowDropDownLine className="h-10 inline" />}
+          // icon={<RiArrowDropDownLine className="h-10 inline" />}
           link="/#"
         >
           <DropdownMenu state="scans" />
