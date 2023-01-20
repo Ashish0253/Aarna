@@ -8,13 +8,15 @@ import phoneCall from "../../Assets/footer/phone-call.png";
 
 import { Link } from "react-router-dom";
 
+import "./Footer.css";
+
 export default function Footer() {
   return (
-    <footer className="font-body">
-      <div className="lg:grid lg:grid-cols-4 gap-0 text-gray-500 bg-white font-semibold pt-10 pb-2">
+    <footer className="font-body md:pt-10">
+      <div className="footer text-gray-700 bg-white font-semibold pt-10 pb-2">
         {/* column 1 */}
-        <div className="ml-20">
-          <img src={Logo} alt="Aarna logo" className="w-[40%] p-2" />
+        <div className="pl-10">
+          <img src={Logo} alt="Aarna logo" className=" md:w-[80%]" />
 
           <ul>
             {/* <li className="m-4 text-sm font-bold pb-6">
@@ -104,7 +106,7 @@ export default function Footer() {
           {/* <h1 className="font-semibold text-3xl m-2 border-b-4 py-4 w-1/3">
             Departments
           </h1> */}
-          <ul className="p-2 mt-20 text-md font-bold">
+          <ul className="p-2 text-md font-bold">
             <li className="mb-4 ">
               <a href="/" className="hover:text-[#1a0e69] ">
                 <button className="transform hover:scale-110 ease-out duration-300">
@@ -148,7 +150,7 @@ export default function Footer() {
           {/* <h1 className="font-semibold text-3xl m-2 border-b-4 py-4 w-3/5">
             Quick Links
           </h1> */}
-          <ul className="p-2 mt-20 font-bold">
+          <ul className="p-2 font-bold">
             <li className="mb-4 ">
               <a href="/" className="hover:text-[#1a0e69]">
                 <button className="transform hover:scale-110 ease-out duration-300">
@@ -181,7 +183,7 @@ export default function Footer() {
         </div>
 
         {/* column 4 */}
-        <div className="mr-[100px] ml-[-64px] grid grid-rows-2">
+        <div className="pl-10 grid grid-rows-2">
           <div>
             <h1 className="font-bold text-4xl text-[#1a0e69]">
               <img

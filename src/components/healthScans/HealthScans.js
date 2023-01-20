@@ -75,7 +75,7 @@ function HealthScans() {
       <h1 className="text-center mb-20 text-5xl font-bold text-black">
         Health Scans
       </h1>
-      <div className="relative mx-[116px]">
+      <div className="relative mx-[10%]">
         <RenderArrows />
         <Slider ref={slider} {...settings}>
           {content.map((item) => {

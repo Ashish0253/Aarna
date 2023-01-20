@@ -4,6 +4,8 @@ import prescription from "../../Assets/feature/pills.svg";
 import flask from "../../Assets/feature/beaker.svg";
 import { Link } from "react-router-dom";
 
+import "./Feature.css";
+
 export default function Feature() {
   function handleLocation() {
     const successCallback = (position) => {
@@ -27,7 +29,7 @@ export default function Feature() {
   }
 
   return (
-    <div className="px-[275px] py-5 grid grid-cols-3 bg-primary bg-opacity-95 font-semibold">
+    <feature className="feature py-5 grid grid-cols-3 bg-primary bg-opacity-95 font-semibold">
       <div className="py-6 mx-2 rounded-md border-2 border-white">
         <Link to="/#" onClick={handleLocation}>
           <div className="flex justify-center hover:scale-[1.20] transition ease-out 300">
@@ -54,6 +56,6 @@ export default function Feature() {
           </h1>
         </Link>
       </div>
-    </div>
+    </feature>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import { FaRegUser } from "react-icons/fa";
+// import { FaRegUser } from "react-icons/fa";
 // import { RiArrowDropDownLine } from "react-icons/ri";
 import { CSSTransition } from "react-transition-group";
 import "./Navbar.css";
@@ -9,7 +9,7 @@ import "./Navbar.css";
 export default function Navbar() {
   return (
     <div className="bg-[#f8f8f8] font-[1000] sticky top-0 z-10  ease-out 200">
-      <div className="flex justify-around px-[170px] pt-3 text-black font-semibold">
+      <div className="flex justify-around px-[10%] pt-3 text-black font-semibold">
         <NavItem title="Home" link="/" />
         <NavItem title="Book a Test" link="/bookatest" />
         <NavItem
@@ -35,7 +35,7 @@ export default function Navbar() {
         </NavItem>
         <NavItem title="Doctors" link="/doctors" />
         <NavItem title="Contact Us" link="/contactus" />
-        <NavItem icon={<FaRegUser className="w-5 inline mx-2" />} link="/#" />
+        {/* <NavItem icon={<FaRegUser className="w-5 inline mx-2" />} link="/#" /> */}
       </div>
     </div>
   );
