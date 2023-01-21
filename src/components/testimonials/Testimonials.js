@@ -8,17 +8,18 @@ import "./Testimonials.css";
 
 export default function Testimonials() {
   return (
-    <div className="grid md:grid-cols-3 testimonial bg-[#f8f8f8]">
+    <div className=" testimonial bg-[#f8f8f8]">
       <div className="m-20 pt-10  left-0">
         <div className="sticky top-[10px]">
           <p className="text-center text-xl font-bold rounded-lg border-gray-300 border-2 py-1 px-0 bg-white">
             Testimonials
           </p>
 
-          <h1 className="text-4xl font-bold p-6 text-[#1ebaba]">
-            What <br></br> Customers are <br></br>saying about <br></br>Aarna{" "}
+          <h1 className="text-6xl font-bold p-6 text-[#1ebaba]">
+            {/* What <br></br> Customers are <br></br>saying about <br></br>Aarna{" "}
             <br></br>
-            Diagnostics
+            Diagnostics */}
+            What Customers are saying about Aarna Diagnostics
           </h1>
         </div>
       </div>
