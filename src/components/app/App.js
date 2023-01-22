@@ -71,7 +71,7 @@ export default App;
 
 function Home() {
   return (
-    <home>
+    <>
       <Carousel />
       <Feature />
       <Packages />
@@ -80,6 +80,6 @@ function Home() {
       <WhyChooseUs />
       <Testimonials />
       <Map />
-    </home>
+    </>
   );
 }
