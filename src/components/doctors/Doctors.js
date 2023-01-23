@@ -10,7 +10,7 @@ export default function Doctors() {
         Our Doctors
       </h1>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-5 place-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 place-items-center">
         {content.map((item) => {
           return (
             <Link to={item.id.toString()} key={item.id}>
