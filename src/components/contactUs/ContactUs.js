@@ -1,5 +1,6 @@
 import React from "react";
 import "./ContactUs.css";
+import MessageForm from "./MessageForm";
 // import sky from "../../Assets/contact-us/sky.png";
 
 export default function ContactUs() {
@@ -91,7 +92,9 @@ export default function ContactUs() {
           </div>
         </div>
 
-        <div className="bg-[#eaeaea]"></div>
+        <div className="bg-[#eaeaea]">
+          <MessageForm />
+        </div>
       </div>
     </div>
   );
