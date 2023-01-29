@@ -84,7 +84,7 @@ export default function Doc3() {
       </div>
 
       {/* Special Interests */}
-      <div className="p-10">
+      <div className="p-10 bg-[#f0efef]">
         <h1 className="text-3xl font-bold text-[#1a0f69] py-5">
           Special Interests
         </h1>
