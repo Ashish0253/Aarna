@@ -80,7 +80,10 @@ function HealthScans() {
         <Slider ref={slider} {...settings}>
           {content.map((item) => {
             return (
-              <div className="rounded-xl overflow-hidden text-center text-black bg-white pb-5">
+              <div
+                key={item.id}
+                className="rounded-xl overflow-hidden text-center text-black bg-white pb-5"
+              >
                 <a href="/#">
                   <img
                     src={item.src}

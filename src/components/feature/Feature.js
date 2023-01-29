@@ -29,7 +29,7 @@ export default function Feature() {
   }
 
   return (
-    <feature className="feature py-5 grid grid-cols-3 bg-primary bg-opacity-95 font-semibold">
+    <div className="feature py-5 grid grid-cols-3 bg-primary bg-opacity-95 font-semibold">
       <div className="py-6 mx-2 rounded-md border-2 border-white">
         <Link to="/#" onClick={handleLocation}>
           <div className="flex justify-center hover:scale-[1.20] transition ease-out 300">
@@ -56,6 +56,6 @@ export default function Feature() {
           </h1>
         </Link>
       </div>
-    </feature>
+    </div>
   );
 }

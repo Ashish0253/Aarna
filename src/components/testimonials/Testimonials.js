@@ -26,7 +26,10 @@ export default function Testimonials() {
       <div className="p-4 pt-[200px] ml-10">
         {content1.map((item) => {
           return (
-            <div className="page border-[#1ebaba] text-white rounded-md border-t-4 shadow-xl mb-10 p-8 bg-[#1a0e69] bg-opacity-95 testimonial-card">
+            <div
+              key={item.id}
+              className="page border-[#1ebaba] text-white rounded-md border-t-4 shadow-xl mb-10 p-8 bg-[#1a0e69] bg-opacity-95 testimonial-card"
+            >
               <p className="text-center p-2">{item.review}</p>
               <h1 className="text-left border-[#1ebaba] border-t-2 pt-8">
                 {item.name}
@@ -48,7 +51,10 @@ export default function Testimonials() {
       <div className="p-10 pt-[100px]">
         {content2.map((item) => {
           return (
-            <div className=" border-[#1ebaba] text-white rounded-md border-t-4 shadow-xl mb-10 p-8 bg-[#1a0e69] bg-opacity-95 testimonial-card">
+            <div
+              key={item.id}
+              className=" border-[#1ebaba] text-white rounded-md border-t-4 shadow-xl mb-10 p-8 bg-[#1a0e69] bg-opacity-95 testimonial-card"
+            >
               <p className="text-center p-2">{item.review}</p>
               <h1 className="text-left border-[#1ebaba] border-t-2 pt-8">
                 {item.name}

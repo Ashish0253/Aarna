@@ -1,11 +1,11 @@
+.feature {
+  padding-left: 275px;
+  padding-right: 275px;
+}
+
 @media screen and (max-width: 1165px) {
   .feature {
     padding-left: 0px;
     padding-right: 0px;
   }
-}
-
-feature {
-  padding-left: 275px;
-  padding-right: 275px;
 }

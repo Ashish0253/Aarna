@@ -84,7 +84,7 @@ export default function Packages() {
           {content.map((item) => {
             return (
               <div
-                id="trial"
+                key={item.id}
                 className="relative text-white bg-[#1a0e69] bg-opacity-95 rounded-3xl p-10 h-[480px] w-[200px] overflow-hidden shadow-sm border-2 border-transparent hover:drop-shadow-lg transition ease-out-300"
               >
                 <h1 className="abolute top-0 font-bold text-white text-4xl mb-2">

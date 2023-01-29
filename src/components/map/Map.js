@@ -9,10 +9,10 @@ export default function Map() {
         // src="https://www.google.com/maps/d/embed?mid=1CJeM_X2V5bxL2WtcIDYK2dmzpt2Dm8U&ehbc=2E312F"
         width="600"
         height="450"
-        allowfullscreen=""
+        allowFullScreen=""
         loading="lazy"
         title="map"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
   );

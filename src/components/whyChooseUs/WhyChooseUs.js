@@ -15,7 +15,10 @@ export default function WhyChooseUs() {
         <div className="grid grid-cols-4 px-[5%] py-[2%] z-[1]">
           {content1.map((item) => {
             return (
-              <div className="m-2  rounded border-2 border-transparent p-5 grid grid-rows-2 z-[1]">
+              <div
+                key={item.id}
+                className="m-2  rounded border-2 border-transparent p-5 grid grid-rows-2 z-[1]"
+              >
                 <div>
                   <h1 className="text-3xl text-center text-[#1ebaba] font-semibold">
                     {item.heading}
@@ -33,7 +36,10 @@ export default function WhyChooseUs() {
         <div className="grid grid-cols-3 p-5 mx-[20%] my-10 bg-white rounded-xl z-[1]">
           {content2.map((item) => {
             return (
-              <div className="p-5 rounded border-2 border-transparent z-[1] ">
+              <div
+                key={item.id}
+                className="p-5 rounded border-2 border-transparent z-[1] "
+              >
                 <div className="flex justify-center">
                   <img src={item.img} alt="respective" className="w-20" />
                 </div>

@@ -31,7 +31,7 @@ export default function Header() {
             GET A FREE CALL
           </button>
 
-          {isOpen && <Popup handleClose={handleClick} open={isOpen} />}
+          {isOpen && <Popup handleClick={handleClick} open={isOpen} />}
         </div>
       </div>
     </div>
