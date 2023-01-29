@@ -32,33 +32,55 @@ export default function MessageForm() {
       </h1>
       <form autoComplete="off" onSubmit={handleSubmit}>
         <div>
-          <label>Name</label>
-          <input
-            type="text"
-            placeholder="Enter name"
-            required
-            onChange={(e) => setName(e.target.value)}
-            value={name}
-          />
-          <label>Phone Number</label>
-          <input
-            type="text"
-            placeholder="Enter moblie number"
-            required
-            onChange={(e) => setNumber(e.target.value)}
-            value={phone}
-          />
-          <label>Messsage</label>
-          <input
-            type="text"
-            placeholder="Enter message"
-            required
-            onChange={(e) => setMessage(e.target.value)}
-            value={message}
-          />
+          <div className="py-1">
+            <label className="text-xl font-mono text-semibold pr-5 inline-block">
+              Name
+            </label>
+            <input
+              type="text"
+              placeholder="Enter name"
+              required
+              onChange={(e) => setName(e.target.value)}
+              value={name}
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2 dark:bg-gray-300 dark:border-gray-200 dark:placeholder-gray-600 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            />
+          </div>
+
+          <div className="py-1">
+            <label className="text-xl font-mono text-semibold pr-5 inline-block">
+              Phone Number
+            </label>
+            <input
+              type="text"
+              placeholder="Enter moblie number"
+              required
+              onChange={(e) => setNumber(e.target.value)}
+              value={phone}
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2 dark:bg-gray-300 dark:border-gray-200 dark:placeholder-gray-600 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            />
+          </div>
+          <div className="py-1">
+            <label className="text-xl font-mono text-semibold pr-5 inline-block">
+              Messsage
+            </label>
+            <input
+              type="text"
+              placeholder="Enter message"
+              required
+              onChange={(e) => setMessage(e.target.value)}
+              value={message}
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2 dark:bg-gray-300 dark:border-gray-200 dark:placeholder-gray-600 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            />
+          </div>
         </div>
-        <div>
-          <button type="submit">Sumbit</button>
+
+        <div className="py-1 relative">
+          <button
+            type="submit"
+            className=" absolute right-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+          >
+            Sumbit
+          </button>
         </div>
       </form>
     </div>
