@@ -18,6 +18,10 @@ import ContactUs from "../contactUs/ContactUs";
 import BookTest from "../bookatest/BookTest";
 
 import Doctors from "../doctors/Doctors";
+import Doc1 from "../doctors/Doc1";
+import Doc2 from "../doctors/Doc2";
+import Doc3 from "../doctors/Doc3";
+import Doc4 from "../doctors/Doc4";
 
 import Radiology from "../department/Radiology";
 import Pathology from "../department/Pathology";
@@ -45,6 +49,11 @@ function App() {
           <Route exact path="/contactus" element={<ContactUs />} />
           <Route exact path="/bookatest" element={<BookTest />} />
           <Route exact path="/doctors" element={<Doctors />} />
+          <Route exact path="/doctors/1" element={<Doc1 />} />
+          <Route exact path="/doctors/1" element={<Doc1 />} />
+          <Route exact path="/doctors/2" element={<Doc2 />} />
+          <Route exact path="/doctors/3" element={<Doc3 />} />
+          <Route exact path="/doctors/4" element={<Doc4 />} />
 
           <Route exact path="/radiology" element={<Radiology />} />
           <Route exact path="/pathology" element={<Pathology />} />
