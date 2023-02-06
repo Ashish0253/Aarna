@@ -8,7 +8,7 @@ export default function Modal(props) {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { error },
   } = useForm();
 
   if (!props.open) return null;
@@ -16,6 +16,8 @@ export default function Modal(props) {
   const onSubmit = (data) => {
     console.log(data);
   };
+
+  console.log(error);
 
   return ReactDOM.createPortal(
     <div>

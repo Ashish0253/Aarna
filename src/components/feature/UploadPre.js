@@ -8,6 +8,8 @@ export default function UploadPre() {
     formState: { errors },
   } = useForm();
 
+  console.log(errors);
+
   const onSubmit = (data) => {
     console.log(data);
   };
