@@ -16,16 +16,14 @@ export default function Doc2() {
 
         <div className="sm:col-span-2">
           <h1 className="py-4 text-2xl font-semibold text-[#f8f8f8] underline underline-offset-4">
-            Ayi Ayi yo subramanyam
+            Dr Poonam Rajput
           </h1>
           <p className="text-lg font-medium text-[#f8f8f8]">
-            Department: BOhot hard hai bhai
+            Department: Director
           </p>
+          <p className="text-lg font-medium text-[#f8f8f8]">Gender: Female</p>
           <p className="text-lg font-medium text-[#f8f8f8]">
-            Gender: Jo marzi tujhe kya bc
-          </p>
-          <p className="text-lg font-medium text-[#f8f8f8]">
-            Location: Dun ghati
+            Location: Dehradun
           </p>
         </div>
       </div>
@@ -37,7 +35,7 @@ export default function Doc2() {
             <thead class="text-xl font-semibold text-[#1a0f69] uppercase bg-white dark:bg-white dark:text-[#1a0f69]">
               <tr>
                 <th scope="col" class="px-6 py-3">
-                  Place of Emplpoyment
+                  Place of Employment
                 </th>
                 <th scope="col" class="px-6 py-3">
                   Post
@@ -53,30 +51,10 @@ export default function Doc2() {
                   scope="row"
                   class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-blue-400"
                 >
-                  AIIMS DELHI
+                  Aarna Diagnostics Centre
                 </th>
-                <td class="px-6 py-4">Senior Doctor</td>
-                <td class="px-6 py-4">1999-2001</td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-white dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th
-                  scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-blue-400"
-                >
-                  Aarna Diagnostics
-                </th>
-                <td class="px-6 py-4">Radiologist</td>
-                <td class="px-6 py-4">2003-present</td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-white dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th
-                  scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-blue-400"
-                >
-                  Lal path labs
-                </th>
-                <td class="px-6 py-4">Pahtologist</td>
-                <td class="px-6 py-4">2001-2003</td>
+                <td class="px-6 py-4">Director</td>
+                <td class="px-6 py-4">12+ Years</td>
               </tr>
             </tbody>
           </table>
@@ -104,42 +82,7 @@ export default function Doc2() {
                 clip-rule="evenodd"
               ></path>
             </svg>
-            <span>
-              Trained in molecular techniques including FISH, PCR from Tata
-              Memorial Hospital, Mumbai
-            </span>
-          </li>
-          <li class="flex items-center space-x-3">
-            {/* <!-- Icon --> */}
-            <svg
-              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <span>Trained in Immunohistochemistry and frozen biopsies</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            {/* <!-- Icon --> */}
-            <svg
-              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <span>Breast pathology, Oncopathology, Molecular Pathology</span>
+            <span>Vast experience in general clinical practice</span>
           </li>
           <li class="flex items-center space-x-3">
             {/* <!-- Icon --> */}
@@ -156,8 +99,43 @@ export default function Doc2() {
               ></path>
             </svg>
             <span>
-              Experience in lab management and Molecular Lab setup.
-              Standardization and Validation of FISH panels and PCR tests
+              Skilled at formulating plan of treatment for patient’s teeth and
+              mouth tissue
+            </span>
+          </li>
+          <li class="flex items-center space-x-3">
+            {/* <!-- Icon --> */}
+            <svg
+              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span>Ability to perform dentistry for patients</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            {/* <!-- Icon --> */}
+            <svg
+              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span>
+              Ability to write prescriptions for antibiotics and other
+              medications
             </span>
           </li>
           <li class="flex items-center space-x-3">
@@ -175,9 +153,63 @@ export default function Doc2() {
               ></path>
             </svg>
             <span>
-              Thesis topic: A clinicopathological study on Chronic Myeloid
-              leukemia in NEIGRIHMS.
+              Ability to advise and instruct patients regarding preventive
+              dental care
             </span>
+          </li>
+          <li class="flex items-center space-x-3">
+            {/* <!-- Icon --> */}
+            <svg
+              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span>
+              Proficient with dental instruments, x-rays, and other diagnostic
+              equipment
+            </span>
+          </li>
+          <li class="flex items-center space-x-3">
+            {/* <!-- Icon --> */}
+            <svg
+              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span>
+              Familiarity with OSHA standards, JCAHO, local ordinances, and
+              state and federal laws applicable to assigned dental clinic
+            </span>
+          </li>
+          <li class="flex items-center space-x-3">
+            {/* <!-- Icon --> */}
+            <svg
+              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span>Excellent written and verbal communication skills</span>
           </li>
         </ul>
       </div>

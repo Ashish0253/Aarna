@@ -16,16 +16,14 @@ export default function Doc3() {
 
         <div className="sm:col-span-2">
           <h1 className="py-4 text-2xl font-semibold text-[#f8f8f8] underline underline-offset-4">
-            Ayi Ayi yo subramanyam
+            Dr. Ravina Solanki
           </h1>
           <p className="text-lg font-medium text-[#f8f8f8]">
-            Department: BOhot hard hai bhai
+            Department: D.N.B Radio-Diagnosis
           </p>
+          <p className="text-lg font-medium text-[#f8f8f8]">Gender: Female</p>
           <p className="text-lg font-medium text-[#f8f8f8]">
-            Gender: Jo marzi tujhe kya bc
-          </p>
-          <p className="text-lg font-medium text-[#f8f8f8]">
-            Location: Dun ghati
+            Location: Dehradun
           </p>
         </div>
       </div>
@@ -37,7 +35,7 @@ export default function Doc3() {
             <thead class="text-xl font-semibold text-[#1a0f69] uppercase bg-white dark:bg-white dark:text-[#1a0f69]">
               <tr>
                 <th scope="col" class="px-6 py-3">
-                  Place of Emplpoyment
+                  Place of Employment
                 </th>
                 <th scope="col" class="px-6 py-3">
                   Post
@@ -53,30 +51,50 @@ export default function Doc3() {
                   scope="row"
                   class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-blue-400"
                 >
-                  AIIMS DELHI
+                  Dr. B. L. Kapur Super Speciality Hospital,New Delhi
                 </th>
-                <td class="px-6 py-4">Senior Doctor</td>
-                <td class="px-6 py-4">1999-2001</td>
+                <td class="px-6 py-4">Resident</td>
+                <td class="px-6 py-4">MAR 2016 TO MAR 2019</td>
               </tr>
               <tr class="bg-white border-b dark:bg-white dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                 <th
                   scope="row"
                   class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-blue-400"
                 >
-                  Aarna Diagnostics
+                  Venkateshwar Hospital, Dwarka, New Delhi
                 </th>
-                <td class="px-6 py-4">Radiologist</td>
-                <td class="px-6 py-4">2003-present</td>
+                <td class="px-6 py-4">Senior Resident</td>
+                <td class="px-6 py-4">JUL 2019 TO MAR 2020</td>
               </tr>
               <tr class="bg-white border-b dark:bg-white dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                 <th
                   scope="row"
                   class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-blue-400"
                 >
-                  Lal path labs
+                  Aakash Healthcare: Super Speciality Hospital
                 </th>
-                <td class="px-6 py-4">Pahtologist</td>
-                <td class="px-6 py-4">2001-2003</td>
+                <td class="px-6 py-4">Attending consultant</td>
+                <td class="px-6 py-4">MAR 2020 TO SEP 2021</td>
+              </tr>
+              <tr class="bg-white border-b dark:bg-white dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-blue-400"
+                >
+                  AIIMS RISHIKESH{" "}
+                </th>
+                <td class="px-6 py-4">PDCC senior residency IBCC</td>
+                <td class="px-6 py-4">March 2022 to August 2022</td>
+              </tr>
+              <tr class="bg-white border-b dark:bg-white dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-blue-400"
+                >
+                  Aarna Diagnostics centre{" "}
+                </th>
+                <td class="px-6 py-4">D.N.B Radio-Diagnosis </td>
+                <td class="px-6 py-4">August 2022 onwards</td>
               </tr>
             </tbody>
           </table>
@@ -105,59 +123,8 @@ export default function Doc3() {
               ></path>
             </svg>
             <span>
-              Trained in molecular techniques including FISH, PCR from Tata
-              Memorial Hospital, Mumbai
-            </span>
-          </li>
-          <li class="flex items-center space-x-3">
-            {/* <!-- Icon --> */}
-            <svg
-              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <span>Trained in Immunohistochemistry and frozen biopsies</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            {/* <!-- Icon --> */}
-            <svg
-              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <span>Breast pathology, Oncopathology, Molecular Pathology</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            {/* <!-- Icon --> */}
-            <svg
-              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <span>
-              Experience in lab management and Molecular Lab setup.
-              Standardization and Validation of FISH panels and PCR tests
+              Fourth AIIMS MAMC PGI Imaging Course Series on Advances in Imaging
+              Technology, April 2019
             </span>
           </li>
           <li class="flex items-center space-x-3">
@@ -175,8 +142,98 @@ export default function Doc3() {
               ></path>
             </svg>
             <span>
-              Thesis topic: A clinicopathological study on Chronic Myeloid
-              leukemia in NEIGRIHMS.
+              Interventional Radiology Conference by Delhi State Chapter of
+              IRIA, August 2018
+            </span>
+          </li>
+          <li class="flex items-center space-x-3">
+            {/* <!-- Icon --> */}
+            <svg
+              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span>Seventh Radiology Hot seat Review Course, August 2018</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            {/* <!-- Icon --> */}
+            <svg
+              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span>
+              IFUMB Mid Term CME dedicated to Gynecology Ultrasound And Imaging,
+              August 2018
+            </span>
+          </li>
+          <li class="flex items-center space-x-3">
+            {/* <!-- Icon --> */}
+            <svg
+              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span>
+              AIIMS Radiology Course: Imaging In Chest Infections, August 2018
+            </span>
+          </li>
+          <li class="flex items-center space-x-3">
+            {/* <!-- Icon --> */}
+            <svg
+              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span>
+              IJRI Workshop on Publishing Radiology Manuscript, July 2018{" "}
+            </span>
+          </li>
+          <li class="flex items-center space-x-3">
+            {/* <!-- Icon --> */}
+            <svg
+              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span>
+              Oncology Imaging & Interventions 2018 at Delhi State Cancer
+              Institute, May 2018{" "}
             </span>
           </li>
         </ul>

@@ -16,16 +16,14 @@ export default function Doc1() {
 
         <div className="sm:col-span-2">
           <h1 className="py-4 text-2xl font-semibold text-[#f8f8f8] underline underline-offset-4">
-            Ayi Ayi yo subramanyam
+            Dr. ANIL RAJPUT
           </h1>
           <p className="text-lg font-medium text-[#f8f8f8]">
-            Department: BOhot hard hai bhai
+            Department: Pathology
           </p>
+          <p className="text-lg font-medium text-[#f8f8f8]">Gender: Male</p>
           <p className="text-lg font-medium text-[#f8f8f8]">
-            Gender: Jo marzi tujhe kya bc
-          </p>
-          <p className="text-lg font-medium text-[#f8f8f8]">
-            Location: Dun ghati
+            Location: Dehradun
           </p>
         </div>
       </div>
@@ -37,7 +35,7 @@ export default function Doc1() {
             <thead class="text-xl font-semibold text-[#1a0f69] uppercase bg-white dark:bg-white dark:text-[#1a0f69]">
               <tr>
                 <th scope="col" class="px-6 py-3">
-                  Place of Emplpoyment
+                  Place of Employment
                 </th>
                 <th scope="col" class="px-6 py-3">
                   Post
@@ -53,30 +51,20 @@ export default function Doc1() {
                   scope="row"
                   class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-blue-400"
                 >
-                  AIIMS DELHI
+                  Shri Guru Ram Rai Institute of Medical & Health Sciences
                 </th>
-                <td class="px-6 py-4">Senior Doctor</td>
-                <td class="px-6 py-4">1999-2001</td>
+                <td class="px-6 py-4">Resident Medical Officer</td>
+                <td class="px-6 py-4">3 Years </td>
               </tr>
               <tr class="bg-white border-b dark:bg-white dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                 <th
                   scope="row"
                   class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-blue-400"
                 >
-                  Aarna Diagnostics
+                  Aarna Diagnostic Centre
                 </th>
-                <td class="px-6 py-4">Radiologist</td>
-                <td class="px-6 py-4">2003-present</td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-white dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th
-                  scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-blue-400"
-                >
-                  Lal path labs
-                </th>
-                <td class="px-6 py-4">Pahtologist</td>
-                <td class="px-6 py-4">2001-2003</td>
+                <td class="px-6 py-4">Consultant Pathologist </td>
+                <td class="px-6 py-4">12+ Years</td>
               </tr>
             </tbody>
           </table>
@@ -105,59 +93,10 @@ export default function Doc1() {
               ></path>
             </svg>
             <span>
-              Trained in molecular techniques including FISH, PCR from Tata
-              Memorial Hospital, Mumbai
-            </span>
-          </li>
-          <li class="flex items-center space-x-3">
-            {/* <!-- Icon --> */}
-            <svg
-              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <span>Trained in Immunohistochemistry and frozen biopsies</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            {/* <!-- Icon --> */}
-            <svg
-              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <span>Breast pathology, Oncopathology, Molecular Pathology</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            {/* <!-- Icon --> */}
-            <svg
-              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <span>
-              Experience in lab management and Molecular Lab setup.
-              Standardization and Validation of FISH panels and PCR tests
+              As medical officer, was responsible for OPD & Emergency Services
+              as well as active participation in national programs such as Pulse
+              polio immunization program, routine vaccination programs,
+              blindness control programs, antenatal and postnatal care services.
             </span>
           </li>
           <li class="flex items-center space-x-3">
@@ -175,8 +114,29 @@ export default function Doc1() {
               ></path>
             </svg>
             <span>
-              Thesis topic: A clinicopathological study on Chronic Myeloid
-              leukemia in NEIGRIHMS.
+              As a consultant Pathologist, was responsible not only for my
+              domain i.e. Pathology, serology and Molecular Biology but also for
+              Clinical pathology, routine Hematology and routine Biochemistry.
+            </span>
+          </li>
+          <li class="flex items-center space-x-3">
+            {/* <!-- Icon --> */}
+            <svg
+              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span>
+              Training of all Healthcare staff including doctors, nurses,
+              Technicians, housekeeping staff and attendants to maintain NABH
+              standards.
             </span>
           </li>
         </ul>
