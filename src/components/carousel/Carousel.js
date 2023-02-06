@@ -55,9 +55,8 @@ export default function Carousel() {
         <Slider ref={slider} {...settings}>
           {images.map((item) => {
             return (
-              <div>
+              <div key={item.id}>
                 <img
-                  key={item.id}
                   src={item.source}
                   alt="images"
                   className="rounded-md h-[600px] w-full"

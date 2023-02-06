@@ -35,7 +35,7 @@ export const content1 = [
 
 export const content2 = [
   {
-    id: 5,
+    id: 3,
     name: "Pankaj Bhatt",
     review:
       "Diagnostic center provides good facilities to the patient. Staff are very polite and we'll mannered. They are following all the guidelines for the Covid situation as well as maintaining social distance also. My all over experience is good. So I highly recommend for everyone.",
@@ -43,7 +43,7 @@ export const content2 = [
     source: "Google Review",
   },
   {
-    id: 6,
+    id: 4,
     name: "Andrew Collins",
     review:
       "Best place for diagnosis of tests, to work and train. Neat, clean and properly maintained labs, sterilised instruments. The whole staff is friendly and shows respect to all.Lab technicians are here supportive and have in depth knowledge of the field. Accurate and fast results, no chance of inaccuracy.👍🏻",
