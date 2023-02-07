@@ -9,6 +9,7 @@ import { ButtonBase } from "@mui/material";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Carousel.css";
+import { Link } from "react-router-dom";
 
 export default function Carousel() {
   const slider = React.useRef(null);
@@ -49,22 +50,40 @@ export default function Carousel() {
   };
 
   return (
-    <div className="w-full h-full px-0 ">
-      <div className="relative">
+    <div className="grid grid-cols-2  ">
+      <div className="relative col-span-1">
         <RenderArrows />
-        <Slider ref={slider} {...settings}>
+        <Slider ref={slider} {...settings} className="">
           {images.map((item) => {
             return (
               <div key={item.id}>
                 <img
                   src={item.source}
                   alt="images"
-                  className="rounded-md h-[600px] w-full"
+                  className="rounded-md h-[400px]"
                 />
               </div>
             );
           })}
         </Slider>
+      </div>
+
+      <div className="flex justify-around items-center px-20 font-bold text-primary bg-[#2d0bb5]">
+        <Link>
+          <button className="border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c]">
+            Book A Test
+          </button>
+        </Link>
+        <Link>
+          <button className="border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c]">
+            Nearest Centre
+          </button>
+        </Link>
+        <Link>
+          <button className="border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c]">
+            Upload Prescription
+          </button>
+        </Link>
       </div>
     </div>
   );

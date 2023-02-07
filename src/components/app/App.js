@@ -82,7 +82,7 @@ function Home() {
   return (
     <>
       <Carousel />
-      <Feature />
+      {/* <Feature /> */}
       <Packages />
       <Departments />
       <HealthScans />

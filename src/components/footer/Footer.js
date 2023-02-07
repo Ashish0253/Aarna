@@ -203,7 +203,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h1 className="font-bold text-4xl m-2 py-4 text-[#1a0e69]">
+            <h1 className="font-bold text-4xl m-2 pt-2 text-[#1a0e69]">
               Follow Us
             </h1>
             <ul className="p-2 flex">
