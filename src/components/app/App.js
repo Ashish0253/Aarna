@@ -10,7 +10,7 @@ import Testimonials from "../testimonials/Testimonials";
 import Carousel from "../carousel/Carousel";
 import HealthScans from "../healthScans/HealthScans";
 import Navbar from "../navbar/Navbar";
-import Feature from "../feature/Feature";
+// import Feature from "../feature/Feature";
 import WhyChooseUs from "../whyChooseUs/WhyChooseUs";
 
 import ContactUs from "../contactUs/ContactUs";
@@ -82,7 +82,7 @@ function Home() {
   return (
     <>
       <Carousel />
-      <Feature />
+      {/* <Feature /> */}
       <Packages />
       <Departments />
       <HealthScans />

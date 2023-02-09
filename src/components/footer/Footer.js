@@ -13,7 +13,7 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <footer className="font-body md:pt-10">
-      <div className="footer text-gray-700 bg-white font-semibold pt-10 pb-2">
+      <div className="footer text-gray-700 bg-white font-semibold">
         {/* column 1 */}
         <div className="pl-10">
           <img src={Logo} alt="Aarna logo" className=" md:w-[80%]" />
@@ -203,7 +203,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h1 className="font-bold text-4xl m-2 py-4 text-[#1a0e69]">
+            <h1 className="font-bold text-4xl m-2 pt-2 text-[#1a0e69]">
               Follow Us
             </h1>
             <ul className="p-2 flex">

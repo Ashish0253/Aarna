@@ -9,6 +9,7 @@ import { ButtonBase } from "@mui/material";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Carousel.css";
+import { Link } from "react-router-dom";
 
 export default function Carousel() {
   const slider = React.useRef(null);
@@ -49,22 +50,45 @@ export default function Carousel() {
   };
 
   return (
-    <div className="w-full h-full px-0 ">
-      <div className="relative">
+    <div className="grid grid-cols-2  ">
+      <div className="relative col-span-1">
         <RenderArrows />
-        <Slider ref={slider} {...settings}>
+        <Slider ref={slider} {...settings} className="">
           {images.map((item) => {
             return (
               <div key={item.id}>
                 <img
                   src={item.source}
                   alt="images"
-                  className="rounded-md h-[600px] w-full"
+                  className="rounded-md h-[400px]"
                 />
               </div>
             );
           })}
         </Slider>
+      </div>
+
+      <div className=" font-bold grid grid-rows-2 text-primary bg-[#2d0bb5]">
+        <div className="text-5xl flex items-end py-4 px-[100px] text-[#0aee9c]">
+          Let's Connect
+        </div>
+        <div className="px-20 flex justify-around items-start">
+          <Link to="/bookatest">
+            <button className="border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c]">
+              Book A Test
+            </button>
+          </Link>
+          <Link to="/#" className="font-bold">
+            <button className="font-bold border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c]">
+              Nearest Centre
+            </button>
+          </Link>
+          <Link to="/uploadprescription">
+            <button className="border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c]">
+              Upload Prescription
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );
