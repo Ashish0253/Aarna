@@ -68,22 +68,27 @@ export default function Carousel() {
         </Slider>
       </div>
 
-      <div className="flex justify-around items-center px-20 font-bold text-primary bg-[#2d0bb5]">
-        <Link>
-          <button className="border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c]">
-            Book A Test
-          </button>
-        </Link>
-        <Link>
-          <button className="border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c]">
-            Nearest Centre
-          </button>
-        </Link>
-        <Link>
-          <button className="border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c]">
-            Upload Prescription
-          </button>
-        </Link>
+      <div className=" font-bold grid grid-rows-2 text-primary bg-[#2d0bb5]">
+        <div className="text-5xl flex items-end py-4 px-[100px] text-[#0aee9c]">
+          Let's Connect
+        </div>
+        <div className="px-20 flex justify-around items-start">
+          <Link to="/bookatest">
+            <button className="border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c]">
+              Book A Test
+            </button>
+          </Link>
+          <Link to="/#" className="font-bold">
+            <button className="font-bold border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c]">
+              Nearest Centre
+            </button>
+          </Link>
+          <Link to="/uploadprescription">
+            <button className="border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c]">
+              Upload Prescription
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

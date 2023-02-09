@@ -57,12 +57,10 @@ export default function UploadPre() {
             />
           </div>
           <div className="m-4">
-            <label className="font-bold">Attach Prescription *</label>
-            <input
-              className="mt-2 px-4 w-[85%] h-[50px] border-gray-400 rounded border-[1px]"
-              type="text"
-              required
-            />
+            <label className="font-bold">
+              Attach Prescription *<br></br>
+            </label>
+            <input className="mt-2" type="file" required />
           </div>
         </div>
         <div className="flex justify-center">
