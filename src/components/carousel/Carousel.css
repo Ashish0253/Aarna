@@ -16,3 +16,20 @@
   right: 20px;
   z-index: 1;
 }
+
+.watermark {
+  position: relative;
+}
+.watermark::before {
+  content: "";
+  background: url(../../Assets/aarnaLabImg.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  opacity: 0.1;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  /* z-index: -1; */
+}

@@ -50,8 +50,8 @@ export default function Carousel() {
   };
 
   return (
-    <div className="grid grid-cols-2  ">
-      <div className="relative col-span-1">
+    <div className="grid grid-cols-2 watermark bg-[#1a0e69] h-[500px]">
+      <div className="relative col-span-1 pt-10 pl-5">
         <RenderArrows />
         <Slider ref={slider} {...settings} className="">
           {images.map((item) => {
@@ -60,7 +60,7 @@ export default function Carousel() {
                 <img
                   src={item.source}
                   alt="images"
-                  className="rounded-md h-[400px]"
+                  className="rounded-r-xl border-2 border-primary h-[400px]"
                 />
               </div>
             );
@@ -68,23 +68,23 @@ export default function Carousel() {
         </Slider>
       </div>
 
-      <div className=" font-bold grid grid-rows-2 text-primary bg-[#2d0bb5]">
-        <div className="text-5xl flex items-end py-4 px-[100px] text-[#0aee9c]">
+      <div className=" font-bold grid grid-rows-2 text-primary bg-[#1a0e69] ">
+        <div className="text-5xl flex items-end py-4 px-[100px] text-[#0aee9c] z-[1]">
           Let's Connect
         </div>
-        <div className="px-20 flex justify-around items-start">
+        <div className="px-20 flex justify-around items-start z-[1]">
           <Link to="/bookatest">
-            <button className="border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c]">
+            <button className="border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c] ease-out duration-300">
               Book A Test
             </button>
           </Link>
           <Link to="/#" className="font-bold">
-            <button className="font-bold border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c]">
+            <button className="font-bold border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c] ease-out duration-300">
               Nearest Centre
             </button>
           </Link>
           <Link to="/uploadprescription">
-            <button className="border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c]">
+            <button className="border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c] ease-out duration-300">
               Upload Prescription
             </button>
           </Link>

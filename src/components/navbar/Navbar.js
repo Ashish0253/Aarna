@@ -11,7 +11,7 @@ export default function Navbar() {
     <div className="bg-[#f8f8f8] font-[1000] sticky top-0 z-10  ease-out 200">
       <div className="flex justify-around px-[10%] pt-3 text-black font-semibold">
         <NavItem title="Home" link="/" />
-        <NavItem title="Book a Test" link="/bookatest" />
+        <NavItem title="Book Test" link="/bookatest" />
         <NavItem
           title="Health Packages"
           // icon={<RiArrowDropDownLine className="h-10 inline" />}
