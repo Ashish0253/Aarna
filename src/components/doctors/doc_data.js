@@ -9,22 +9,22 @@ const content = [
   {
     id: 2,
     src: "http://aarnadiagnosticcentre.com/wp-content/uploads/2021/05/vibhul-1.png",
-    name: "Dr Vibhu Goyal",
-    desc: "MD Radiology",
+    name: "Dr Poonam Rajput",
+    desc: "Director",
     linkedin: "https://www.linkedin.com/",
   },
   {
     id: 3,
     src: "http://aarnadiagnosticcentre.com/wp-content/uploads/2021/05/4da7d835-fdb2-4cf6-abed-19c8d58d74571.png",
-    name: "Dr Akansha",
-    desc: "Radiologits",
+    name: "Dr Ravina Solanki",
+    desc: "Radiology",
     linkedin: "https://www.linkedin.com/",
   },
   {
     id: 4,
     src: "http://aarnadiagnosticcentre.com/wp-content/uploads/2021/05/index.jpg",
-    name: "Dr Priyam Sharma",
-    desc: "Pathologist",
+    name: "Dr Pranoy Paul",
+    desc: "Pathology",
     linkedin: "https://www.linkedin.com/",
   },
 ];

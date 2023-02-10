@@ -16,16 +16,14 @@ export default function Doc4() {
 
         <div className="sm:col-span-2">
           <h1 className="py-4 text-2xl font-semibold text-[#f8f8f8] underline underline-offset-4">
-            Ayi Ayi yo subramanyam
+            Dr Pranoy Paul{" "}
           </h1>
           <p className="text-lg font-medium text-[#f8f8f8]">
-            Department: BOhot hard hai bhai
+            Department: Histo and Cytopathology Lab
           </p>
+          <p className="text-lg font-medium text-[#f8f8f8]">Gender: Male</p>
           <p className="text-lg font-medium text-[#f8f8f8]">
-            Gender: Jo marzi tujhe kya bc
-          </p>
-          <p className="text-lg font-medium text-[#f8f8f8]">
-            Location: Dun ghati
+            Location: Dehradun
           </p>
         </div>
       </div>
@@ -37,7 +35,7 @@ export default function Doc4() {
             <thead class="text-xl font-semibold text-[#1a0f69] uppercase bg-white dark:bg-white dark:text-[#1a0f69]">
               <tr>
                 <th scope="col" class="px-6 py-3">
-                  Place of Emplpoyment
+                  Place of Employment
                 </th>
                 <th scope="col" class="px-6 py-3">
                   Post
@@ -53,30 +51,42 @@ export default function Doc4() {
                   scope="row"
                   class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-blue-400"
                 >
-                  AIIMS DELHI
+                  NEIGRIHMS{" "}
                 </th>
-                <td class="px-6 py-4">Senior Doctor</td>
-                <td class="px-6 py-4">1999-2001</td>
+                <td class="px-6 py-4">Junior Resident</td>
+                <td class="px-6 py-4">June 2015 to June 2018</td>
               </tr>
               <tr class="bg-white border-b dark:bg-white dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                 <th
                   scope="row"
                   class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-blue-400"
                 >
-                  Aarna Diagnostics
+                  AIIMS, Rishikesh
                 </th>
-                <td class="px-6 py-4">Radiologist</td>
-                <td class="px-6 py-4">2003-present</td>
+                <td class="px-6 py-4">Senior Resident</td>
+                <td class="px-6 py-4">August 2018 to August 2021</td>
               </tr>
               <tr class="bg-white border-b dark:bg-white dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                 <th
                   scope="row"
                   class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-blue-400"
                 >
-                  Lal path labs
+                  MRU, AIIMS, Rishikesh
                 </th>
-                <td class="px-6 py-4">Pahtologist</td>
-                <td class="px-6 py-4">2001-2003</td>
+                <td class="px-6 py-4">Research Scientist II</td>
+                <td class="px-6 py-4">Jan 2022 to August 2022</td>
+              </tr>
+              <tr class="bg-white border-b dark:bg-white dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-blue-400"
+                >
+                  Aarna Diagnostics Centre{" "}
+                </th>
+                <td class="px-6 py-4">
+                  Visiting consultant, Histopathology & Cytopathology
+                </td>
+                <td class="px-6 py-4">August 2022 to till date</td>
               </tr>
             </tbody>
           </table>
@@ -84,7 +94,7 @@ export default function Doc4() {
       </div>
 
       {/* Special Interests */}
-      <div className="p-10">
+      <div className="p-10 bg-[#f0efef]">
         <h1 className="text-3xl font-bold text-[#1a0f69] py-5">
           Special Interests
         </h1>
@@ -139,7 +149,10 @@ export default function Doc4() {
                 clip-rule="evenodd"
               ></path>
             </svg>
-            <span>Breast pathology, Oncopathology, Molecular Pathology</span>
+            <span>
+              Special interest: Breast pathology, Oncopathology, Molecular
+              Pathology
+            </span>
           </li>
           <li class="flex items-center space-x-3">
             {/* <!-- Icon --> */}
