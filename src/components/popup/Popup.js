@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import ReactDOM from "react-dom";
+import axios from "axios";
 
 // import mobIcon from "../Assets/mobile-phone.png";
 
@@ -14,7 +15,20 @@ export default function Modal(props) {
   if (!props.open) return null;
 
   const onSubmit = (data) => {
-    console.log(data);
+    const postData = {
+      bloodTest: data.bloodTest,
+      mobile: data.mobile,
+      name: data.name,
+      scan: data.scan,
+    };
+    axios
+      .post(
+        "https://sheet.best/api/sheets/fc0855fc-ca9f-4f7c-bb84-bcdf48cefab0",
+        postData
+      )
+      .then((response) => {
+        console.log(response);
+      });
   };
 
   console.log(error);
