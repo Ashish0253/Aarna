@@ -1,28 +1,32 @@
+import D1 from "../../Assets/Doc-Img/Anil.jpg";
+import D2 from "../../Assets/Doc-Img/Ravina.jpg";
+import D3 from "../../Assets/Doc-Img/Vibhu.jpg";
+
 const content = [
   {
     id: 1,
-    src: "http://aarnadiagnosticcentre.com/wp-content/uploads/2021/05/Anil-1.png",
+    src: D1,
     name: "Dr Anil Rajput",
     desc: "MD Pathology",
     linkedin: "https://www.linkedin.com/",
   },
   {
     id: 2,
-    src: "http://aarnadiagnosticcentre.com/wp-content/uploads/2021/05/vibhul-1.png",
+    src: D2,
     name: "Dr Poonam Rajput",
     desc: "Director",
     linkedin: "https://www.linkedin.com/",
   },
   {
     id: 3,
-    src: "http://aarnadiagnosticcentre.com/wp-content/uploads/2021/05/4da7d835-fdb2-4cf6-abed-19c8d58d74571.png",
+    src: D2,
     name: "Dr Ravina Solanki",
     desc: "Radiology",
     linkedin: "https://www.linkedin.com/",
   },
   {
     id: 4,
-    src: "http://aarnadiagnosticcentre.com/wp-content/uploads/2021/05/index.jpg",
+    src: D3,
     name: "Dr Pranoy Paul",
     desc: "Pathology",
     linkedin: "https://www.linkedin.com/",

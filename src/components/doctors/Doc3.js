@@ -1,5 +1,6 @@
 import React from "react";
 import "./doctor.css";
+import D3 from "../../Assets/Doc-Img/Ravina.jpg";
 
 export default function Doc3() {
   return (
@@ -7,11 +8,7 @@ export default function Doc3() {
       {/* Header details section for doctor */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-10 doc_info_header">
         <div className="flex justify-center">
-          <img
-            alt=""
-            src="https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg?w=2000"
-            className="rounded-full w-60 h-60"
-          />
+          <img alt="" src={D3} className="rounded-full w-60 h-60" />
         </div>
 
         <div className="sm:col-span-2">

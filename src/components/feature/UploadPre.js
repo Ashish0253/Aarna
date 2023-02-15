@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
 
@@ -11,6 +12,19 @@ export default function UploadPre() {
   console.log(errors);
 
   const onSubmit = (data) => {
+    const postData = {
+      Name: data.name,
+      Email: data.email,
+      Number: data.number,
+    };
+    axios
+      .post(
+        "https://sheet.best/api/sheets/fc0855fc-ca9f-4f7c-bb84-bcdf48cefab0",
+        postData
+      )
+      .then((response) => {
+        console.log(response);
+      });
     console.log(data);
   };
 
