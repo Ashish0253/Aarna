@@ -1,6 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
 
+import * as ROUTES from "../../constants/routes";
+
 import images from "./Images";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
@@ -73,7 +75,7 @@ export default function Carousel() {
           Let's Connect
         </div>
         <div className="px-20 flex justify-around items-start z-[1]">
-          <Link to="/bookatest">
+          <Link to={ROUTES.BOOK_TEST}>
             <button className="border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c] ease-out duration-300">
               Book A Test
             </button>
@@ -83,7 +85,7 @@ export default function Carousel() {
               Nearest Centre
             </button>
           </Link>
-          <Link to="/uploadprescription">
+          <Link to={ROUTES.UPLOAD_PRESCRIPTION}>
             <button className="border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c] ease-out duration-300">
               Upload Prescription
             </button>

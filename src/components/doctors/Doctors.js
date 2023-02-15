@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import content from "./doc_data";
 
-export default function Doctors() {
+export default function DoctorsInfo() {
   return (
     <div className="pt-20 px-28">
       <h1 className="text-center mb-20 text-5xl font-bold text-black">
