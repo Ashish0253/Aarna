@@ -4,7 +4,7 @@ import { content } from "./content";
 // import { Propane } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
-export default function Department() {
+export default function Departments() {
   const [isPathologyOpen, setPathologyOpen] = useState(false);
   const [isRadiologyOpen, setRadiologyOpen] = useState(false);
 

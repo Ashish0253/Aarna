@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import * as ROUTES from "../../constants/routes";
 
 // import { FaRegUser } from "react-icons/fa";
 // import { RiArrowDropDownLine } from "react-icons/ri";
@@ -10,31 +11,31 @@ export default function Navbar() {
   return (
     <div className="bg-[#f8f8f8] font-[1000] sticky top-0 z-10  ease-out 200">
       <div className="flex justify-around px-[10%] pt-3 text-black font-semibold">
-        <NavItem title="Home" link="/" />
-        <NavItem title="Book Test" link="/bookatest" />
+        <NavItem title="Home" link={ROUTES.HOME} />
+        <NavItem title="Book Test" link={ROUTES.BOOK_TEST} />
         <NavItem
           title="Health Packages"
           // icon={<RiArrowDropDownLine className="h-10 inline" />}
-          link="/#"
+          link={ROUTES.PACKAGES}
         >
           <DropdownMenu state="packages" />
         </NavItem>
         <NavItem
           title="Departments"
           // icon={<RiArrowDropDownLine className="h-10 inline" />}
-          link="/#"
+          link={ROUTES.DEPARTMENTS}
         >
           <DropdownMenu state="departments" />
         </NavItem>
         <NavItem
           title="Scans"
           // icon={<RiArrowDropDownLine className="h-10 inline" />}
-          link="/#"
+          link={ROUTES.SCANS}
         >
           <DropdownMenu state="scans" />
         </NavItem>
-        <NavItem title="Doctors" link="/doctors" />
-        <NavItem title="Contact Us" link="/contactus" />
+        <NavItem title="Doctors" link={ROUTES.DOCTORS} />
+        <NavItem title="Contact Us" link={ROUTES.CONTACT_US} />
         {/* <NavItem icon={<FaRegUser className="w-5 inline mx-2" />} link="/#" /> */}
       </div>
     </div>
