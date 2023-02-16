@@ -53,7 +53,7 @@ export default function Carousel() {
 
   return (
     <div className="grid grid-cols-2 watermark bg-[#1a0e69] h-[500px]">
-      <div className="relative col-span-1 pt-10 pl-5">
+      <div className="relative col-span-1 pt-[42px] pl-5">
         <RenderArrows />
         <Slider ref={slider} {...settings} className="">
           {images.map((item) => {
@@ -62,7 +62,7 @@ export default function Carousel() {
                 <img
                   src={item.source}
                   alt="images"
-                  className="rounded-r-xl border-2 border-primary h-[400px]"
+                  className="rounded-r-xl border-2 border-secondary h-[450px]"
                 />
               </div>
             );

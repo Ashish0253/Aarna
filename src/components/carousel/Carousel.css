@@ -7,13 +7,13 @@
 
 .arrow-btn-prev-carousel {
   float: left;
-  left: 20px;
+  left: 10px;
   z-index: 1;
 }
 
 .arrow-btn-next-carousel {
   float: right;
-  right: 20px;
+  right: 25px;
   z-index: 1;
 }
 
