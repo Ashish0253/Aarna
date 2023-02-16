@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
 
-export default function UploadPre() {
+export default function Upload() {
   const {
     register,
     handleSubmit,
@@ -29,12 +29,12 @@ export default function UploadPre() {
   };
 
   return (
-    <div className="mx-[120px] mt-10 mb-20 border-2 border-black p-4 rounded-lg">
-      <div className=" my-4 text-3xl font-bold">Home Collection Query Form</div>
+    <div className=" container mx-[120px] mt-10 mb-20 border-2 border-transparent drop-shadow-md bg-[#FFFFFF]  p-8 rounded-lg">
+      <div className=" my-4 text-3xl font-bold">Collection Query Form</div>
       <p>
         Hi there. Don't know which test/package to choose from? Nothing to worry
         about! Please fill in the details below and someone from our team will
-        call back for home collection confirmation
+        call back for collection confirmation
       </p>
       <p className="font-bold">
         <p className="text-red-700 inline">Note:</p> Fields marked with * are
@@ -79,7 +79,7 @@ export default function UploadPre() {
         </div>
         <div className="flex justify-center">
           <button
-            className="mt-6 mx-4 w-[20%] text-lg rounded border-transparent bg-secondary border-2 py-1 px-5 text-white font-semibold hover:bg-primary transition ease-out duration-500"
+            className="drop-shadow-md mt-6 mx-4 w-[20%] text-lg rounded-lg border-transparent bg-secondary border-2 py-1 px-5 text-white font-semibold hover:bg-primary transition ease-out duration-500"
             type="submit"
           >
             Submit

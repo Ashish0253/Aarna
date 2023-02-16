@@ -23,17 +23,19 @@ import ArthritisTest from "../components/healthPackages/ArthritisTest";
 import ThyroidTest from "../components/healthPackages/ThyroidTest";
 import DiabetesTest from "../components/healthPackages/DiabetesTest";
 
-import UploadPre from "../components/feature/UploadPre";
+// import UploadPre from "../components/feature/UploadPre";
 
 import * as ROUTES from "../constants/routes";
 
 const Home = lazy(() => import("../pages/home"));
 const BookTest = lazy(() => import("../pages/bookTest"));
-const Packages = lazy(() => import("../pages/Packages"));
+const Packages = lazy(() => import("../pages/packages"));
 const Departments = lazy(() => import("../pages/departments"));
 const Scans = lazy(() => import("../pages/scans"));
 const Doctors = lazy(() => import("../pages/doctors"));
 const ContactUs = lazy(() => import("../pages/contactUs"));
+
+const UploadPre = lazy(() => import("../pages/uploadpre"));
 
 function App() {
   return (

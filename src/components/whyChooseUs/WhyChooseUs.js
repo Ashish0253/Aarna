@@ -8,25 +8,26 @@ export default function WhyChooseUs() {
     <div className="bg-[#1a0e69]">
       <div className="p-5 watermark">
         <div className="text-center text-5xl font-bold text-white p-10 z-[1]">
-          Why Choose Us ?
+          WHY AARNA DAGNOSTIC CENTRE ?
         </div>
 
         {/* first part */}
-        <div className="grid grid-cols-4 px-[5%] py-[2%] z-[1]">
+        <div className="grid grid-cols-3 px-[1%] py-[2%] z-[1]">
           {content1.map((item) => {
             return (
               <div
                 key={item.id}
-                className="m-2  rounded border-2 border-transparent p-5 grid grid-rows-2 z-[1]"
+                className=" border-r-2 border-white p-5  z-[1]"
               >
-                <div>
-                  <h1 className="text-3xl text-center text-[#1ebaba] font-semibold">
-                    {item.heading}
-                  </h1>
+                <div className="flex justify-center text-center">
+                  <div className=" text-white text-3xl pr-1">{item.img}</div>
+                  <div className=" text-2xl text-white  font-semibold">
+                    {item.heading}{" "}
+                  </div>
                 </div>
-                <div className="flex justify-center ">
+                {/* <div className="flex justify-center ">
                   <img src={item.img} alt="respective" className="w-20 " />
-                </div>
+                </div> */}
               </div>
             );
           })}

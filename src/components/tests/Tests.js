@@ -8,7 +8,7 @@ export default function Tests() {
     <div className="container grid grid-cols-3 gap-4 ">
       {tests.map((item) => {
         return (
-          <div className="border-2 border-black rounded-lg p-6 ">
+          <div className="border-2 border-transparent rounded-lg p-6 bg-[#FFFFFF] drop-shadow-md">
             <p className="font-bold text-xl py-1">COMPLETE BLOOD COUNT; CBC</p>
             <p className="text-xs px-1">22 Parameters Covered</p>
             <p className="font-bold text-lg">
@@ -27,7 +27,7 @@ export default function Tests() {
               </div>
             </div>
 
-            <button className="border-2 border-black rounded-lg p-2 bg-primary text-white">
+            <button className="border-2 border-transparent rounded-lg p-2 bg-primary text-white drop-shadow-lg">
               Book Now
             </button>
           </div>

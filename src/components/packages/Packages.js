@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import "./Packages.css";
 // import { AiOutlineArrowLeft } from "react-icons/ai";
 
+import { BiRupee } from "react-icons/bi";
+
 import * as ROUTES from "../../constants/routes";
 
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
@@ -109,9 +111,17 @@ export default function Packages() {
                   {/* price and button start */}
                   <div className="bottom-4 absolute">
                     <div className="font-bold text-md">Normal Price:</div>{" "}
-                    <div className="line-through"> {item.price}/-</div>
-                    <div className="font-bold text-xl">Offer Price:</div>{" "}
-                    <div className="text-xl"> {item.offerPrice}/-</div>
+                    <div className="line-through">
+                      <BiRupee className="inline" />
+                      {item.price}/-
+                    </div>
+                    <div className="font-bold text-xl text-[#0aee9c]">
+                      Offer Price:
+                    </div>{" "}
+                    <div className="text-xl text-[#0aee9c]">
+                      <BiRupee className="inline" />
+                      {item.offerPrice}/-
+                    </div>
                     <div className="flex justify-around">
                       <button className=" text-white mt-6 font-semibold border-white border-2  hover:bg-white hover:text-black rounded-md px-4 py-1 hover:scale-110 ease-out duration-300">
                         Book Now
