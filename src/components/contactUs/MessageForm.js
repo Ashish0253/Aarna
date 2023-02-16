@@ -36,7 +36,7 @@ export default function MessageForm() {
   };
 
   return (
-    <div className="p-8 pb-8">
+    <div className="p-8 pb-20">
       <h1 className="font-bold text-4xl text-white  tracking-wide flex justify-center items-center">
         AARNA
       </h1>
