@@ -8,10 +8,10 @@ export const tests = [
   },
   {
     id: 2,
-    title: "COMPLETE BLOOD COUNT; CBC",
+    title: "Ashish; CBC",
     params: 22,
     price: 350,
-    home: true,
+    home: false,
   },
   {
     id: 3,
@@ -40,5 +40,12 @@ export const tests = [
     params: 22,
     price: 350,
     home: true,
+  },
+  {
+    id: 7,
+    title: "COMPLETE BLOOD COUNT; CBC",
+    params: 22,
+    price: 350,
+    home: false,
   },
 ];
