@@ -4,13 +4,19 @@ import axios from "axios";
 export default function MessageForm() {
   const [name, setName] = useState("");
   const [phone, setNumber] = useState("");
-  const [message, setMessage] = useState("");
+  const [email, setEmail] = useState("");
+  const [gender, setGender] = useState("");
+  const [collection, setCollection] = useState("");
+  const [date, setDate] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = {
       Name: name,
       Phone: phone,
-      Message: message,
+      Message: email,
+      Gender: gender,
+      Collection: collection,
+      Date: date,
     };
     axios
       .post(
@@ -20,66 +26,96 @@ export default function MessageForm() {
       .then((response) => {
         console.log(response);
         setName("");
-        setMessage("");
+        setEmail("");
         setNumber("");
+        setGender("");
+        setCollection("");
+        setDate("");
       });
   };
 
   return (
-    <div className="pt-20 pl-10 h-96">
-      <h1 className="py-10 text-bold text-4xl font-mono tracking-wide">
-        Message for us
+    <div className="p-8 pb-8">
+      <h1 className="font-bold text-4xl text-white  tracking-wide flex justify-center items-center">
+        AARNA
       </h1>
+      <h2 className="font-semibold text-white text-xsm  flex justify-center items-center">
+        DIAGNOSTIC CENTRE
+      </h2>
+      <p className="text-white text-sm py-4 font-semibold">
+        Enter your details:
+      </p>
       <form autoComplete="off" onSubmit={handleSubmit}>
-        <div>
-          <div className="py-1">
-            <label className="text-xl font-mono text-semibold pr-5 inline-block">
-              Name
-            </label>
+        <div className="grid grid-cols-2 gap-y-2 gap-x-6">
+          <div className="">
             <input
               type="text"
-              placeholder="Enter name"
+              placeholder="Name"
               required
               onChange={(e) => setName(e.target.value)}
               value={name}
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2 dark:bg-gray-300 dark:border-gray-200 dark:placeholder-gray-600 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-[#2d0bb5] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
             />
           </div>
 
-          <div className="py-1">
-            <label className="text-xl font-mono text-semibold pr-5 inline-block">
-              Phone Number
-            </label>
+          <div className="">
             <input
               type="text"
-              placeholder="Enter moblie number"
+              placeholder="Moblie"
               required
               onChange={(e) => setNumber(e.target.value)}
               value={phone}
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2 dark:bg-gray-300 dark:border-gray-200 dark:placeholder-gray-600 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-[#2d0bb5] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
             />
           </div>
-          <div className="py-1">
-            <label className="text-xl font-mono text-semibold pr-5 inline-block">
-              Messsage
-            </label>
+          <div className="">
             <input
               type="text"
-              placeholder="Enter message"
+              placeholder="Email id"
               required
-              onChange={(e) => setMessage(e.target.value)}
-              value={message}
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2 dark:bg-gray-300 dark:border-gray-200 dark:placeholder-gray-600 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+              className="bg-[#2d0bb5] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Gender"
+              required
+              onChange={(e) => setGender(e.target.value)}
+              value={gender}
+              className="bg-[#2d0bb5] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Collection Type"
+              required
+              onChange={(e) => setCollection(e.target.value)}
+              value={collection}
+              className="bg-[#2d0bb5] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
+            />
+          </div>
+          <div>
+            <input
+              type="datetime-local"
+              placeholder="Date and time"
+              required
+              onChange={(e) => setDate(e.target.value)}
+              value={date}
+              className="bg-[#2d0bb5] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
             />
           </div>
         </div>
 
-        <div className="py-1 relative">
+        <div className="py-8 flex justify-center items-center">
           <button
             type="submit"
-            className=" absolute right-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+            className="bg-white hover:bg-blue-300 text-[#2d0bb5] font-semibold py-2 px-4 rounded-full"
           >
-            Sumbit
+            Enquire Now
           </button>
         </div>
       </form>
