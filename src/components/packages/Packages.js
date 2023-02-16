@@ -4,12 +4,15 @@ import Slider from "react-slick";
 import "./Packages.css";
 // import { AiOutlineArrowLeft } from "react-icons/ai";
 
+import * as ROUTES from "../../constants/routes";
+
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { ButtonBase } from "@mui/material";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 export default function Packages() {
   const slider = React.useRef(null);
@@ -126,9 +129,11 @@ export default function Packages() {
         </Slider>
       </div>
       <div className="flex justify-center mt-20">
-        <button className="z-[1]  text-lg font-semibold border-2 border-primary text-primary px-10 py-2 rounded-md hover:text-white hover:bg-primary hover:scale-110 ease-out duration-300">
-          View all
-        </button>
+        <Link to={ROUTES.PACKAGES}>
+          <button className="z-[1]  text-lg font-semibold border-2 border-primary text-primary px-10 py-2 rounded-md hover:text-white hover:bg-primary hover:scale-110 ease-out duration-300">
+            View all
+          </button>
+        </Link>
       </div>
     </div>
   );
