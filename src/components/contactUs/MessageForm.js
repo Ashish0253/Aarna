@@ -11,16 +11,17 @@ export default function MessageForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = {
-      Name: name,
-      Phone: phone,
-      Message: email,
+      Patient_Name: name,
+      Mobile: phone,
+      Email_id: email,
       Gender: gender,
       Collection: collection,
-      Date: date,
+      Date_Time: date,
     };
+    console.log(data);
     axios
       .post(
-        "https://sheet.best/api/sheets/e38832dc-f339-47f0-b5c9-65bbc000c77f",
+        "https://sheet.best/api/sheets/fc0855fc-ca9f-4f7c-bb84-bcdf48cefab0",
         data
       )
       .then((response) => {
@@ -61,7 +62,7 @@ export default function MessageForm() {
           <div className="">
             <input
               type="text"
-              placeholder="Moblie"
+              placeholder="Mobile"
               required
               onChange={(e) => setNumber(e.target.value)}
               value={phone}
