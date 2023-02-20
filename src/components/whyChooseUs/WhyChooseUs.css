@@ -3,7 +3,7 @@
 }
 .watermark::before {
   content: "";
-  background: url(../../Assets/aarnaLabImg.jpg) center center no-repeat;
+  background: url(../../Assets/aarnaLabImg.webp) center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
   position: absolute;

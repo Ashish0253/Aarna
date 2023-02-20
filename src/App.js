@@ -25,6 +25,8 @@ import DiabetesTest from "./components/healthPackages/DiabetesTest";
 
 import * as ROUTES from "./constants/routes";
 
+import ScrollToTop from "./components/ScrollToTop";
+
 const Home = lazy(() => import("./pages/home"));
 const BookTest = lazy(() => import("./pages/bookTest"));
 const HealthPackages = lazy(() => import("./pages/healthPackages"));
@@ -44,6 +46,7 @@ export default function App() {
     <Router>
       <Suspense fallback={<p>Loading....</p>}>
         <div className="font-body">
+          <ScrollToTop />
           <Header />
           <Navbar />
           <Routes>

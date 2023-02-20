@@ -1,5 +1,5 @@
-import D1 from "../Assets/Doc-Img/Anil.jpg";
-import D2 from "../Assets/Doc-Img/Ravina.jpg";
+import pic1 from "../Assets/Picture1.webp";
+import pic2 from "../Assets/Picture2.webp";
 // import D3 from "../../Assets/Doc-Img/Vibhu.jpg";
 
 export default function Welcome() {
@@ -8,19 +8,13 @@ export default function Welcome() {
       <div className="grid grid-cols-2 gap-5">
         <div className=" border-2 border-transparent  text-white">
           <div className="flex justify-center ">
-            <img
-              src={D1}
-              alt="Anil rajput"
-              className="h-[300px] w-[300px] m-2 rounded-[50%] border-4 border-primary"
-            />
-          </div>
-          <div className="flex justify-center bg-[#16055d] font-bold text-xl p-3 ">
-            DR ANIL RAJPUT<br></br> MD PATHOLOGIST
+            <img src={pic2} alt="Anil rajput" className="" />
           </div>
         </div>
-        <div className="flex justify-center border-2 border-transparent bg-[#16055d] text-white">
-          <img src={D2} alt="Vibhu goyal" className="h-1/2 w-1/2" />
-          DR VIBHU GOYAL <br></br> MD PATHOLOGIST
+        <div className=" border-2 border-transparent pt-10 text-white">
+          <div className="flex justify-center ">
+            <img src={pic1} alt="Vibhu Goyal" className="" />
+          </div>
         </div>
       </div>
       <div className="p-[1%]">
