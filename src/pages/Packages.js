@@ -1,14 +1,21 @@
 import { content } from "../components/packages/content";
 import { BiRupee } from "react-icons/bi";
 import SearchBar from "../components/SearchBar";
+import { useState } from "react";
 
 export default function Packages() {
+  const [filteredPackages, setFilteredPackages] = useState(content);
+
   return (
     <div className="container p-8 bg-[#EEEEEE]">
-      <SearchBar />
+      <SearchBar
+        items={content}
+        // filteredItems={filteredPackages}
+        setFilteredItems={setFilteredPackages}
+      />
 
       <div className=" grid grid-cols-3 gap-4 p-24 pt-4">
-        {content.map((item) => {
+        {filteredPackages.map((item) => {
           return (
             <div
               key={item.id}

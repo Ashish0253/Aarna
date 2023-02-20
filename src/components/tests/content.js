@@ -1,4 +1,4 @@
-export const tests = [
+export const content = [
   {
     id: 1,
     title: "COMPLETE BLOOD COUNT; CBC",
@@ -15,35 +15,35 @@ export const tests = [
   },
   {
     id: 3,
-    title: "COMPLETE BLOOD COUNT; CBC",
+    title: "Aakhyat; CBC",
     params: 22,
     price: 350,
     home: true,
   },
   {
     id: 4,
-    title: "COMPLETE BLOOD COUNT; CBC",
+    title: "Vishu; CBC",
     params: 22,
     price: 350,
     home: true,
   },
   {
     id: 5,
-    title: "COMPLETE BLOOD COUNT; CBC",
+    title: "Ayan; CBC",
     params: 22,
     price: 350,
     home: true,
   },
   {
     id: 6,
-    title: "COMPLETE BLOOD COUNT; CBC",
+    title: "Kamal; CBC",
     params: 22,
     price: 350,
     home: true,
   },
   {
     id: 7,
-    title: "COMPLETE BLOOD COUNT; CBC",
+    title: "Vaibhav; CBC",
     params: 22,
     price: 350,
     home: false,

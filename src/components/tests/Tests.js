@@ -4,7 +4,7 @@ import { BsFillPatchCheckFill } from "react-icons/bs";
 // import { tests } from "./content";
 
 export default function Tests(props) {
-  console.log(props.tests);
+  console.log("props.tests", props.tests);
 
   return (
     <div className="container grid grid-cols-3 gap-4 p-24 pt-4 ">

@@ -1,7 +1,28 @@
+import D1 from "../Assets/Doc-Img/Anil.jpg";
+import D2 from "../Assets/Doc-Img/Ravina.jpg";
+// import D3 from "../../Assets/Doc-Img/Vibhu.jpg";
+
 export default function Welcome() {
   return (
-    <div className="container grid grid-cols-2 p-[5%] gap-40">
-      <div>photos daal de yaha prr Aryan figma prr</div>
+    <div className="container grid grid-cols-2 p-[4%] gap-32">
+      <div className="grid grid-cols-2 gap-5">
+        <div className=" border-2 border-transparent  text-white">
+          <div className="flex justify-center ">
+            <img
+              src={D1}
+              alt="Anil rajput"
+              className="h-[300px] w-[300px] m-2 rounded-[50%] border-4 border-primary"
+            />
+          </div>
+          <div className="flex justify-center bg-[#16055d] font-bold text-xl p-3 ">
+            DR ANIL RAJPUT<br></br> MD PATHOLOGIST
+          </div>
+        </div>
+        <div className="flex justify-center border-2 border-transparent bg-[#16055d] text-white">
+          <img src={D2} alt="Vibhu goyal" className="h-1/2 w-1/2" />
+          DR VIBHU GOYAL <br></br> MD PATHOLOGIST
+        </div>
+      </div>
       <div className="p-[1%]">
         <div className="font-bold text-primary text-6xl p-4 text-right">
           Welcome To Aarna Diagnostic Centre
