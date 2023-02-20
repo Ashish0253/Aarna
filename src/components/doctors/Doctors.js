@@ -6,7 +6,7 @@ import content from "./doc_data";
 export default function DoctorsInfo() {
   return (
     <div className="pt-20 px-28">
-      <h1 className="text-center mb-20 text-5xl font-bold text-black">
+      <h1 className="text-center mb-20 text-5xl font-bold text-[#1a0e69]">
         Our Doctors
       </h1>
 
@@ -20,7 +20,7 @@ export default function DoctorsInfo() {
                     <img
                       src={item.src}
                       alt={item.id}
-                      className="h-32 sm:h-64 md:h-96 w-full"
+                      className="h-40 sm:h-64 md:h-96 w-96"
                     />
                   </a>
                 </div>

@@ -3,16 +3,16 @@ import Aarna_img from "../../Assets/contact-us/Aarna Img.jpg";
 
 export default function FindOurCenter() {
   return (
-    <div>
+    <div className="Location-box">
       <div
-        className="text-[#1d0092] text-4xl tracking-wide
+        className="text-[#1d0092] text-5xl tracking-wide
  font-black pb-4 flex justify-center items-center"
       >
         Find Our Center
       </div>
 
-      <div className="md:grid md:grid-cols-3 gap-10 p-20">
-        <div className="rounded-2xl border-2 overflow-hidden border-[#1d0092]">
+      <div className="md:grid md:grid-cols-3 gap-10 p-8 px-20">
+        <div className="bg-white rounded-2xl border-2 overflow-hidden border-[#1d0092] img-box">
           <img className="" src={Aarna_img} alt="aarna img"></img>
           <div className="px-4">
             <h1 className="">Aarna Diagnostic Centre</h1>
@@ -65,12 +65,10 @@ export default function FindOurCenter() {
           </div>
         </div>
 
-        <div className="col-span-2 flex justify-center items-center">
+        <div className="col-span-2 flex justify-center items-center map-box">
           <iframe
-            className="rounded-2xl border-2 overflow-hidden border-[#1d0092]"
+            className="rounded-2xl border-2 overflow-hidden border-[#1d0092] w-full h-full"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13779.475194270397!2d78.0274353!3d30.2977965!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092978849052d9%3A0xe74fb09a1c56420e!2sAarna%20Diagnostic%20Centre!5e0!3m2!1sen!2sin!4v1676481627223!5m2!1sen!2sin"
-            width="500"
-            height="300"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
