@@ -18,7 +18,7 @@ export default function Navbar() {
           // icon={<RiArrowDropDownLine className="h-10 inline" />}
           link={ROUTES.PACKAGES}
         >
-          <DropdownMenu state="packages" />
+          {/* <DropdownMenu state="packages" /> */}
         </NavItem>
         <NavItem
           title="Departments"

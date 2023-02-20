@@ -13,7 +13,7 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <footer className="font-body  md:pt-10">
-      <div className="footer text-gray-700 bg-white font-semibold">
+      <div className="footer text-gray-700 bg-white border-b- font-semibold mb-6">
         {/* column 1 */}
         <div className="pl-10">
           <img src={Logo} alt="Aarna logo" className=" md:w-[80%]" />
@@ -193,7 +193,7 @@ export default function Footer() {
               />
               Helpline No.
             </h1>
-            <ul className="my-4">
+            <ul className="m-4">
               <li className="font-bold p-1 text-3xl text-[#1a0e69] transform hover:scale-110 ease-out duration-300">
                 <a href="tel:8648808080">8648808080</a>
               </li>
@@ -206,28 +206,28 @@ export default function Footer() {
             <h1 className="font-bold text-4xl m-2 pt-2 text-[#1a0e69]">
               Follow Us
             </h1>
-            <ul className="p-2 flex">
+            <ul className="m-4 flex">
               <a
                 href="/"
-                className="flex-none mr-4 hover:shadow-lg transform hover:scale-150 ease-out duration-300"
+                className=" mr-4 hover:shadow-lg transform hover:scale-150 ease-out duration-300"
               >
                 <img src={insta} alt="instagram" className="w-6" />
               </a>
               <a
                 href="/"
-                className="flex-initial mr-4 hover:shadow-lg transform hover:scale-150 ease-out duration-300"
+                className=" mr-4 hover:shadow-lg transform hover:scale-150 ease-out duration-300"
               >
                 <img src={linkedin} alt="linkedin" className="w-6" />
               </a>
               <a
                 href="/"
-                className="flex-initial mr-4 hover:shadow-lg transform hover:scale-150 ease-out duration-300"
+                className=" mr-4 hover:shadow-lg transform hover:scale-150 ease-out duration-300"
               >
                 <img src={twitter} alt="twitter" className="w-6" />
               </a>
               <a
                 href="/"
-                className="flex-initial mr-4 hover:shadow-lg transform hover:scale-150 ease-out duration-300"
+                className=" mr-4 hover:shadow-lg transform hover:scale-150 ease-out duration-300"
               >
                 <img src={facebook} alt="facebook" className="w-6" />
               </a>
