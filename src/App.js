@@ -27,7 +27,7 @@ import * as ROUTES from "./constants/routes";
 
 const Home = lazy(() => import("./pages/home"));
 const BookTest = lazy(() => import("./pages/bookTest"));
-const Packages = lazy(() => import("./pages/packages"));
+const HealthPackages = lazy(() => import("./pages/healthPackages"));
 const Departments = lazy(() => import("./pages/departments"));
 const Scans = lazy(() => import("./pages/scans"));
 const Doctors = lazy(() => import("./pages/doctors"));
@@ -50,7 +50,7 @@ export default function App() {
             {/* navbar routes */}
             <Route exact path={ROUTES.HOME} element={<Home />} />
             <Route exact path={ROUTES.BOOK_TEST} element={<BookTest />} />
-            <Route exact path={ROUTES.PACKAGES} element={<Packages />} />
+            <Route exact path={ROUTES.PACKAGES} element={<HealthPackages />} />
             <Route exact path={ROUTES.DEPARTMENTS} element={<Departments />} />
             <Route exact path={ROUTES.SCANS} element={<Scans />} />
             <Route exact path={ROUTES.DOCTORS} element={<Doctors />} />

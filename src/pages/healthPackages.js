@@ -3,7 +3,7 @@ import { BiRupee } from "react-icons/bi";
 import SearchBar from "../components/SearchBar";
 import { useState } from "react";
 
-export default function Packages() {
+export default function HealthPackages() {
   const [filteredPackages, setFilteredPackages] = useState(content);
 
   return (
