@@ -71,7 +71,7 @@ export default function Carousel() {
       </div>
 
       <div className=" font-bold grid grid-rows-2 text-primary bg-[#1a0e69] ">
-        <div className="text-5xl flex items-end py-4 px-[100px] text-[#0aee9c] z-[1]">
+        <div className="text-5xl flex items-end py-4 px-[14%] text-[#0aee9c] z-[1]">
           Let's Connect
         </div>
         <div className="px-20 flex justify-around items-start z-[1]">

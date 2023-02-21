@@ -1,10 +1,8 @@
 import { BiRupee } from "react-icons/bi";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 
-// import { tests } from "./content";
-
 export default function Tests(props) {
-  console.log("props.tests", props.tests);
+  // console.log("props.tests", props.tests);
 
   return (
     <div className="container grid grid-cols-3 gap-4 p-24 pt-4 ">
@@ -35,7 +33,11 @@ export default function Tests(props) {
               )}
             </div>
 
-            <button className="border-2 border-transparent rounded-lg p-2 bg-primary text-white drop-shadow-lg">
+            <button
+              onClick={props.handleClick}
+              value={item.title}
+              className="border-2 border-transparent rounded-lg p-2 bg-primary text-white drop-shadow-lg"
+            >
               Book Now
             </button>
           </div>

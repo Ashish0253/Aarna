@@ -6,6 +6,8 @@ import axios from "axios";
 // import mobIcon from "../Assets/mobile-phone.png";
 
 export default function Modal(props) {
+  console.log("I am running");
+
   const {
     register,
     handleSubmit,

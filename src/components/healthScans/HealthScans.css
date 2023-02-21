@@ -13,10 +13,12 @@
 
 .arrow-btn-prev-scans {
   float: left;
-  right: 15px;
+  right: 18px;
+  z-index: 1;
 }
 
 .arrow-btn-next-scans {
   float: right;
-  left: 25px;
+  left: 27px;
+  z-index: 1;
 }

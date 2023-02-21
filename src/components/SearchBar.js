@@ -8,7 +8,7 @@ import { useState, useMemo, useEffect } from "react";
 export default function SearchBar(props) {
   const [items, setItems] = useState(props.items);
 
-  console.log("items", items);
+  // console.log("items", items);
 
   const [query, setQuery] = useState("");
 
@@ -16,8 +16,8 @@ export default function SearchBar(props) {
     setItems(props.items);
   }, [props]);
 
-  console.log("props", props);
-  console.log("items", items);
+  // console.log("props", props);
+  // console.log("items", items);
 
   const filteredItems = useMemo(() => {
     return items.filter((item) => {
@@ -25,13 +25,13 @@ export default function SearchBar(props) {
     });
   }, [items, query]);
 
-  console.log("its working");
+  // console.log("its working");
 
   useEffect(() => {
     props.setFilteredItems(filteredItems);
   }, [props, filteredItems]);
 
-  console.log("still working");
+  // console.log("still working");
 
   return (
     <div className="justify-center flex p-4 border-2 border-transparent">

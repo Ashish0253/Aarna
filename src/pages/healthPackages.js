@@ -7,7 +7,7 @@ export default function HealthPackages() {
   const [filteredPackages, setFilteredPackages] = useState(content);
 
   return (
-    <div className="container p-8 bg-[#EEEEEE]">
+    <div className=" p-8 bg-[#EEEEEE]">
       <SearchBar
         items={content}
         // filteredItems={filteredPackages}

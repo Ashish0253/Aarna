@@ -82,7 +82,7 @@ function HealthScans() {
             return (
               <div
                 key={item.id}
-                className="rounded-xl overflow-hidden text-center text-black bg-white pb-5"
+                className="rounded-xl overflow-hidden text-center drop-shadow-md text-black bg-white pb-5"
               >
                 <a href="/#">
                   <img

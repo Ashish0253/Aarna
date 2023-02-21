@@ -5,7 +5,7 @@ import Departments from "../components/department/Departments";
 import HealthScans from "../components/healthScans/HealthScans";
 import WhyChooseUs from "../components/whyChooseUs/WhyChooseUs";
 import Testimonials from "../components/testimonials/Testimonials";
-import Map from "../components/map/Map";
+import Map from "../components/Map";
 
 export default function Home() {
   return (

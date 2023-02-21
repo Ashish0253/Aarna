@@ -4,7 +4,7 @@ import pic2 from "../Assets/Picture2.webp";
 
 export default function Welcome() {
   return (
-    <div className="container grid grid-cols-2 p-[4%] gap-32">
+    <div className="grid grid-cols-2 p-[4%] gap-32">
       <div className="grid grid-cols-2 gap-5">
         <div className=" border-2 border-transparent  text-white">
           <div className="flex justify-center ">

@@ -13,15 +13,15 @@ import Doc4 from "./components/doctors/Doc4";
 import Radiology from "./components/department/Radiology";
 import Pathology from "./components/department/Pathology";
 
-import CTScan from "./components/scans/CTScan";
-import Ultrasound from "./components/scans/Ultrasound";
-import DigitalXRay from "./components/scans/DigitalXRay";
-import ECGTest from "./components/scans/ECGTest";
+import CTScan from "./components/healthScans/CTScan";
+import Ultrasound from "./components/healthScans/Ultrasound";
+import DigitalXRay from "./components/healthScans/DigitalXRay";
+import ECGTest from "./components/healthScans/ECGTest";
 
-import UrineTest from "./components/healthPackages/UrineTest";
-import ArthritisTest from "./components/healthPackages/ArthritisTest";
-import ThyroidTest from "./components/healthPackages/ThyroidTest";
-import DiabetesTest from "./components/healthPackages/DiabetesTest";
+import UrineTest from "./components/packages/UrineTest";
+import ArthritisTest from "./components/packages/ArthritisTest";
+import ThyroidTest from "./components/packages/ThyroidTest";
+import DiabetesTest from "./components/packages/DiabetesTest";
 
 import * as ROUTES from "./constants/routes";
 

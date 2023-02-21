@@ -12,10 +12,7 @@ export default function ContactUs() {
           {/* form */}
           <div className="p-20 md:grid md:grid-cols-2 gap-4">
             <div className="pt-10">
-              <h1
-                className="text-[#1d0092] text-5xl tracking-wide
- font-black pb-4 flex justify-center items-center"
-              >
+              <h1 className="text-[#1d0092] text-5xl tracking-wide font-black pb-4 flex justify-center items-center">
                 Contact Us
               </h1>
               <div className="flex justify-center items-center text-lg">
