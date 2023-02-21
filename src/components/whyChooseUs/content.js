@@ -9,12 +9,15 @@ import people from "../../Assets/team.png";
 import { GiAmbulance } from "react-icons/gi";
 import { HiOutlineHome } from "react-icons/hi";
 import { RiMicroscopeLine } from "react-icons/ri";
+import { FaUserNurse } from "react-icons/fa";
+import { TbReport } from "react-icons/tb";
+import { GiTestTubes } from "react-icons/gi";
 
 export const content1 = [
   {
     id: 1,
     heading: "100% ACCURATE RESULTS",
-    img: "",
+    img: <GiTestTubes />,
   },
   {
     id: 2,
@@ -25,7 +28,7 @@ export const content1 = [
   {
     id: 3,
     heading: "PROFESSIONAL ON HAND",
-    img: "",
+    img: <FaUserNurse />,
   },
   {
     id: 4,
@@ -35,7 +38,7 @@ export const content1 = [
   {
     id: 5,
     heading: "FASTEST REPORT GENERATION",
-    img: "",
+    img: <TbReport />,
   },
   {
     id: 6,

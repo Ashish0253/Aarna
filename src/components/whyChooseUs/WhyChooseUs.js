@@ -19,9 +19,9 @@ export default function WhyChooseUs() {
                 key={item.id}
                 className=" border-r-2 border-white p-5  z-[1]"
               >
-                <div className="flex justify-center text-center">
+                <div className="flex justify-around text-center">
                   <div className=" text-white text-3xl pr-1">{item.img}</div>
-                  <div className=" text-2xl text-white  font-semibold">
+                  <div className=" text-2xl text-white font-semibold">
                     {item.heading}{" "}
                   </div>
                 </div>
