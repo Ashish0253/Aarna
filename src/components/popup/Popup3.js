@@ -31,7 +31,7 @@ export default function Modal(props) {
         <form onSubmit={handleSubmit()}>
           {/* test selected by user  */}
           <label className="font-bold text-gray-500 text-lg px-2">
-            Selected Test
+            Selected Package
           </label>
 
           <div className="flex justify-center p-1">
@@ -104,7 +104,7 @@ export default function Modal(props) {
                 id="mobile"
                 name="mobile"
                 placeholder="mobile"
-                required
+                // required
                 {...register("mobile")}
               />
             </div>
@@ -118,7 +118,7 @@ export default function Modal(props) {
               id="type"
               name="type"
               placeholder="type"
-              // required
+              required
               {...register("type")}
             >
               <option className="" value="NULL">

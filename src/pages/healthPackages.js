@@ -2,9 +2,23 @@ import { content } from "../components/packages/content";
 import { BiRupee } from "react-icons/bi";
 import SearchBar from "../components/SearchBar";
 import { useState } from "react";
+import Popup from "../components/popup/Popup3";
 
 export default function HealthPackages() {
   const [filteredPackages, setFilteredPackages] = useState(content);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const [selectedTest, setSelectedTest] = useState("");
+
+  function handleClick(event) {
+    event.preventDefault();
+
+    setIsOpen(!isOpen);
+    // console.log("running");
+    // console.log("event", event.target.value);
+
+    setSelectedTest(event.target.value);
+  }
 
   return (
     <div className=" p-8 bg-[#EEEEEE]">
@@ -52,7 +66,11 @@ export default function HealthPackages() {
                     {item.offerPrice}/-
                   </div>
                   <div className="flex justify-around">
-                    <button className=" text-white mt-6 font-semibold border-white border-2  hover:bg-white hover:text-black rounded-md px-4 py-1 hover:scale-110 ease-out duration-300">
+                    <button
+                      onClick={handleClick}
+                      value={item.title}
+                      className=" text-white mt-6 font-semibold border-white border-2  hover:bg-white hover:text-black rounded-md px-4 py-1 hover:scale-110 ease-out duration-300"
+                    >
                       Book Now
                     </button>
                     <button className="ml-[120px] text-white mt-6 font-semibold border-white border-2 hover:bg-white hover:text-black rounded-md px-4 py-1 hover:scale-110 ease-out duration-300">
@@ -66,6 +84,14 @@ export default function HealthPackages() {
           );
         })}
       </div>
+
+      {isOpen && (
+        <Popup
+          handleClick={handleClick}
+          open={isOpen}
+          selectedTest={selectedTest}
+        />
+      )}
     </div>
   );
 }
