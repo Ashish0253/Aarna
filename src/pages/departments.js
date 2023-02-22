@@ -14,14 +14,25 @@ export default function Departments() {
       {/* Pathology  */}
 
       <div className="z-[1] border-2 border-transparent drop-shadow-lg rounded-lg px-24 py-20 m-24 mt-0 grid grid-cols-2 bg-white">
-        <div className="font-bold text-5xl text-primary">Pathology</div>
+        <div>
+          <div className="font-bold text-5xl p-4 text-primary">Pathology</div>
+          <div className="p-12 flex justify-center text-lg">
+            Pathology deals with the diagnosis and treatment of diseases through
+            examination of tissues (biopsy), bodily fluids, and in some cases
+            the whole body (autopsy). Aarna diagnostic centre is a leading test
+            laboratory committed to providing its customers a comfortable
+            experience with online test bookings, easily accessible test results
+            and also helps in connecting with well reputed and trustworthy
+            doctors and staff easily.
+          </div>
+        </div>
         <div className="grid justify-end">
           <div className="">
             <img src={Pathology} alt="Pathology" className="h-[400px]" />
           </div>
           <div className="flex justify-between pt-16">
             <Link to={ROUTES.BOOK_TEST}>
-              <button className="font-bold text-lg bg-primary text-white drop-shadow-md border-2 border-transparent rounded-xl py-4 px-7 hover:bg-secondary ">
+              <button className="font-bold text-lg bg-primary text-white drop-shadow-md border-2 border-transparent rounded-xl py-4 px-7 hover:bg-secondary hover:text-primary">
                 Book Your Test
               </button>
             </Link>
@@ -39,7 +50,21 @@ export default function Departments() {
 
       {/* Radiology */}
       <div className="z-[1] border-2 border-transparent drop-shadow-lg rounded-lg px-24 py-20 m-24 mt-10 grid grid-cols-2 bg-white">
-        <div className="font-bold text-5xl text-primary">Radiology</div>
+        <div>
+          <div className="font-bold text-5xl p-4 text-primary">Radiology</div>
+          <div className="p-12 flex justify-center text-lg">
+            Radiology is an integral part of modern medical diagnostic
+            procedures. Radiography is a broad term that covers several types of
+            studies that require visualization of internal parts of body using
+            X-ray techniques. Orthopedic evaluations, dental examinations and
+            mammography (detection of tumour or lump in chests) are some of the
+            techniques that utilizes the principle of radiography. Here at Aarna
+            diagnostic centre we prioritize the safety of patients undergoing
+            these evaluation procedures. Our highly trained and experienced
+            medical technicians are committed to providing correct and quick
+            results alongside ensuring the comfort and safety of our patients.
+          </div>
+        </div>
         <div className="grid justify-end">
           <div>
             <img src={Radiology} alt="Pathology" className="h-[400px]" />
