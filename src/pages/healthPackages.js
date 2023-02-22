@@ -35,10 +35,10 @@ export default function HealthPackages() {
               key={item.id}
               className="container h-[450px] relative text-white bg-[#1a0e69] bg-opacity-95 rounded-xl p-10  overflow-hidden drop-shadow-md border-2 border-transparent  transition ease-out-300"
             >
-              <h1 className="abolute top-0 font-bold text-white text-4xl mb-2">
+              <h1 className=" font-bold text-white text-4xl mb-2">
                 {item.title}
               </h1>
-              <div className="top-[100px]absolute px-2 text-sm font-semibold">
+              <div className=" px-2 text-sm font-semibold">
                 Includes: {item.numberOfTests} Tests
               </div>
               <div className=" text-base">
