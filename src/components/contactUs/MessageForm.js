@@ -36,7 +36,7 @@ export default function MessageForm() {
   };
 
   return (
-    <div className="p-8 pb-20">
+    <div className="p-[7%] pb-[13%]">
       <h1 className="font-bold text-4xl text-white  tracking-wide flex justify-center items-center">
         AARNA
       </h1>
@@ -47,7 +47,7 @@ export default function MessageForm() {
         Enter your details:
       </p>
       <form autoComplete="off" onSubmit={handleSubmit}>
-        <div className="grid grid-cols-2 gap-y-2 gap-x-6">
+        <div className="grid grid-cols-2 gap-y-4 gap-x-6">
           <div className="">
             <input
               type="text"
@@ -55,7 +55,7 @@ export default function MessageForm() {
               required
               onChange={(e) => setName(e.target.value)}
               value={name}
-              className="bg-[#2d0bb5] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
+              className="bg-[#2d0bb5] w-[70%] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
             />
           </div>
 
@@ -66,7 +66,7 @@ export default function MessageForm() {
               required
               onChange={(e) => setNumber(e.target.value)}
               value={phone}
-              className="bg-[#2d0bb5] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
+              className="bg-[#2d0bb5] w-[70%] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
             />
           </div>
           <div className="">
@@ -76,7 +76,7 @@ export default function MessageForm() {
               required
               onChange={(e) => setEmail(e.target.value)}
               value={email}
-              className="bg-[#2d0bb5] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
+              className="bg-[#2d0bb5] w-[70%] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
             />
           </div>
           <div>
@@ -86,7 +86,7 @@ export default function MessageForm() {
               required
               onChange={(e) => setGender(e.target.value)}
               value={gender}
-              className="bg-[#2d0bb5] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
+              className="bg-[#2d0bb5] w-[70%] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
             />
           </div>
           <div>
@@ -96,7 +96,7 @@ export default function MessageForm() {
               required
               onChange={(e) => setCollection(e.target.value)}
               value={collection}
-              className="bg-[#2d0bb5] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
+              className="bg-[#2d0bb5] w-[70%] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
             />
           </div>
           <div>
@@ -106,7 +106,7 @@ export default function MessageForm() {
               required
               onChange={(e) => setDate(e.target.value)}
               value={date}
-              className="bg-[#2d0bb5] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
+              className="bg-[#2d0bb5] w-[70%] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
             />
           </div>
         </div>
