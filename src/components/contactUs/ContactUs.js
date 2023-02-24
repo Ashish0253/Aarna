@@ -6,7 +6,7 @@ import FindOurCenter from "./FindOurCenter";
 export default function ContactUs() {
   return (
     <div>
-      <div className="grey-box bg-[#eeeeee] px-20 pt-20 relative z-[-1]">
+      <div className="grey-box bg-[#eeeeee] px-20 pt-20 relative">
         {/* Yaha par white wala block ka kaam */}
         <div className="bg-[#ffffff]">
           {/* form */}

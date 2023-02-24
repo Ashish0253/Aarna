@@ -19,6 +19,12 @@ export default function MessageForm() {
       Date_Time: date,
     };
     console.log(data);
+    const success = document.getElementById("success");
+    success.style.display = "block";
+    setTimeout(() => {
+      success.style.display = "none";
+    }, 4000);
+
     axios
       .post(
         "https://sheet.best/api/sheets/fc0855fc-ca9f-4f7c-bb84-bcdf48cefab0",
@@ -118,6 +124,12 @@ export default function MessageForm() {
           >
             Enquire Now
           </button>
+        </div>
+
+        <div className="message flex justify-center items-center">
+          <div className="success" id="success">
+            Form Submitted Successfully!!
+          </div>
         </div>
       </form>
     </div>
