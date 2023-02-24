@@ -1,6 +1,6 @@
 import React from "react";
 import "./doctor.css";
-import D3 from "../../Assets/Doc-Img/Ravina.jpg";
+import D3 from "../../Assets/Doc-Img/Ravina.webp";
 
 export default function Doc3() {
   return (

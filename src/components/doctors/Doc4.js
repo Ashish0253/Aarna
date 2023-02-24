@@ -1,6 +1,6 @@
 import React from "react";
 import "./doctor.css";
-import D4 from "../../Assets/Doc-Img/Vibhu.jpg";
+import D4 from "../../Assets/Doc-Img/Vibhu.webp";
 
 export default function Doc4() {
   return (
