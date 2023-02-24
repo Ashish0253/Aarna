@@ -17,7 +17,7 @@ export default function Home() {
       <HealthScans />
       <WhyChooseUs />
       <Testimonials />
-      <Map />
+      <Map class="w-full h-[500px]" />
     </>
   );
 }

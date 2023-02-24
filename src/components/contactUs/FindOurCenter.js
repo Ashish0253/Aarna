@@ -1,6 +1,7 @@
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import Aarna_img from "../../Assets/contact-us/Aarna Img.jpg";
+import Map from "../Map";
 
 export default function FindOurCenter() {
   return (
@@ -32,14 +33,15 @@ export default function FindOurCenter() {
         </div>
 
         <div className="col-span-2 flex justify-center items-center map-box z-[1]">
-          <iframe
+          <Map class="rounded-2xl border-2 overflow-hidden border-[#1d0092] w-full h-full" />
+          {/* <iframe
             className="rounded-2xl border-2 overflow-hidden border-[#1d0092] w-full h-full"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13779.475194270397!2d78.0274353!3d30.2977965!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092978849052d9%3A0xe74fb09a1c56420e!2sAarna%20Diagnostic%20Centre!5e0!3m2!1sen!2sin!4v1676481627223!5m2!1sen!2sin"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="aarna map"
-          ></iframe>
+          ></iframe> */}
         </div>
       </div>
     </div>
