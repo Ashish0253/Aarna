@@ -1,6 +1,8 @@
+import axios from "axios";
 import React from "react";
 import ReactDOM from "react-dom";
 import { useForm } from "react-hook-form";
+import "./Popup.css";
 
 export default function Modal(props) {
   // console.log("I am running");
@@ -12,6 +14,23 @@ export default function Modal(props) {
   } = useForm();
 
   if (!props.open) return null;
+  const onSubmit = (data) => {
+    const postData = {};
+    const success = document.getElementById("success");
+    success.style.display = "block";
+    setTimeout(() => {
+      success.style.display = "none";
+    }, 4000);
+
+    axios
+      .post(
+        "https://sheet.best/api/sheets/fc0855fc-ca9f-4f7c-bb84-bcdf48cefab0",
+        postData
+      )
+      .then((response) => {
+        console.log(response);
+      });
+  };
 
   console.log(error);
 
@@ -28,7 +47,7 @@ export default function Modal(props) {
         >
           X
         </button>
-        <form onSubmit={handleSubmit()}>
+        <form onSubmit={handleSubmit(onSubmit)}>
           {/* test selected by user  */}
           <label className="font-bold text-gray-500 text-lg px-2">
             Selected Test
@@ -169,6 +188,11 @@ export default function Modal(props) {
             >
               Book Now
             </button>
+          </div>
+          <div className="message flex justify-center items-center pt-[5%]">
+            <div className="success" id="success">
+              Form Submitted Successfully!!
+            </div>
           </div>
         </form>
       </div>

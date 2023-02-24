@@ -17,7 +17,7 @@
     filter: grayscale(70%) invert(92%) contrast(83%);
   } */
 
-.blue-box{
+/* .blue-box{
   position: absolute;
   z-index: 2;
   bottom: 0;
@@ -32,4 +32,12 @@
 .Location-box{
   position: relative;
   z-index: 3;
+} */
+
+.message .success{
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  animation: buttons .3s linear;
+  display: none;
 }

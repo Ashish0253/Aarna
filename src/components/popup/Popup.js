@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import ReactDOM from "react-dom";
 import axios from "axios";
+import "./Popup.css";
 
 // import mobIcon from "../Assets/mobile-phone.png";
 
@@ -23,6 +24,12 @@ export default function Modal(props) {
       name: data.name,
       scan: data.scan,
     };
+    const success = document.getElementById("success");
+    success.style.display = "block";
+    setTimeout(() => {
+      success.style.display = "none";
+    }, 4000);
+
     axios
       .post(
         "https://sheet.best/api/sheets/fc0855fc-ca9f-4f7c-bb84-bcdf48cefab0",
@@ -105,6 +112,11 @@ export default function Modal(props) {
             >
               Get Free Call Now
             </button>
+          </div>
+          <div className="message flex justify-center items-center pt-[5%]">
+            <div className="success" id="success">
+              Form Submitted Successfully!!
+            </div>
           </div>
           <br></br>
         </form>
