@@ -3,11 +3,14 @@ import { useForm } from "react-hook-form";
 import ReactDOM from "react-dom";
 import axios from "axios";
 import "./Popup.css";
+// import { useNavigate } from "react-router-dom";
 
 // import mobIcon from "../Assets/mobile-phone.png";
 
 export default function Modal(props) {
   console.log("I am running");
+
+  // const navigate = useNavigate();
 
   const {
     register,
@@ -20,8 +23,8 @@ export default function Modal(props) {
   const onSubmit = (data) => {
     const postData = {
       bloodTest: data.bloodTest,
-      mobile: data.mobile,
-      name: data.name,
+      Mobile: data.mobile,
+      Patient_Name: data.name,
       scan: data.scan,
     };
     const success = document.getElementById("success");
@@ -32,7 +35,7 @@ export default function Modal(props) {
 
     axios
       .post(
-        "https://sheet.best/api/sheets/fc0855fc-ca9f-4f7c-bb84-bcdf48cefab0",
+        "https://sheet.best/api/sheets/f935b9d9-4400-489a-8b5f-5eed992f2e2c",
         postData
       )
       .then((response) => {
