@@ -10,8 +10,8 @@ import Doc2 from "./components/doctors/Doc2";
 import Doc3 from "./components/doctors/Doc3";
 import Doc4 from "./components/doctors/Doc4";
 
-import Radiology from "./components/department/Radiology";
-import Pathology from "./components/department/Pathology";
+// import Radiology from "./components/department/Radiology";
+// import Pathology from "./components/department/Pathology";
 
 import CTScan from "./components/healthScans/CTScan";
 import Ultrasound from "./components/healthScans/Ultrasound";
@@ -36,6 +36,9 @@ const Doctors = lazy(() => import("./pages/doctors"));
 const ContactUs = lazy(() => import("./pages/contactUs"));
 
 const UploadPre = lazy(() => import("./pages/uploadpre"));
+
+const Pathology = lazy(() => import("./pages/pathology"));
+const Radiology = lazy(() => import("./pages/radiology"));
 
 export default function App() {
   useEffect(() => {

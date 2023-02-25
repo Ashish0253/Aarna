@@ -37,7 +37,7 @@ export default function Departments() {
               </button>
             </Link>
 
-            <Link to="/#">
+            <Link to={ROUTES.PATHOLOGY}>
               <button className="font-bold text-lg bg-primary text-white drop-shadow-md border-2 border-transparent rounded-xl py-4 px-7 hover:bg-secondary ">
                 Know More
               </button>
@@ -76,7 +76,7 @@ export default function Departments() {
               </button>
             </Link>
 
-            <Link>
+            <Link to={ROUTES.RADIOLOGY}>
               <button className="font-bold text-lg bg-primary text-white drop-shadow-md border-2 border-transparent rounded-xl py-4 px-7 hover:bg-secondary ">
                 Know More
               </button>

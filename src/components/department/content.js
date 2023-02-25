@@ -1,5 +1,5 @@
-import pathology from "../../Assets/microscope.png";
-import radiology from "../../Assets/x-ray.png";
+import pathology from "../../Assets/Pathology.webp";
+import radiology from "../../Assets/Radiology.webp";
 
 export const content = [
   {

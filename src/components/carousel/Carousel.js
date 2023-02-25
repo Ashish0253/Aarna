@@ -74,7 +74,7 @@ export default function Carousel() {
         <div className="text-5xl flex items-end py-4 px-[14%] text-[#0aee9c] z-[1]">
           Let's Connect
         </div>
-        <div className="px-20 flex justify-around items-start z-[1]">
+        <div className="px-[10%] flex justify-around items-start z-[1]">
           <Link to={ROUTES.BOOK_TEST}>
             <button className="border-transparent border-2 rounded-lg p-4 bg-white hover:bg-[#0aee9c] ease-out duration-300">
               Book A Test
