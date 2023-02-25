@@ -22,6 +22,7 @@ export default function Modal(props) {
 
   const onSubmit = (data) => {
     const postData = {
+      Form_Type: "Get a call form",
       bloodTest: data.bloodTest,
       Mobile: data.mobile,
       Patient_Name: data.name,

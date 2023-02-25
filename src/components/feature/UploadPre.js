@@ -16,6 +16,7 @@ export default function Upload() {
 
   const onSubmit = (data) => {
     const postData = {
+      Form_Type: "Prescription Upload Form",
       Patient_Name: data.name,
       Email_id: data.email,
       Mobile: data.number,
