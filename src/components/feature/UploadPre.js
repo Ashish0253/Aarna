@@ -1,8 +1,11 @@
 import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+import "./UploadPres.css";
 
 export default function Upload() {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -13,17 +16,24 @@ export default function Upload() {
 
   const onSubmit = (data) => {
     const postData = {
-      Name: data.name,
-      Email: data.email,
-      Number: data.number,
+      Patient_Name: data.name,
+      Email_id: data.email,
+      Mobile: data.number,
     };
+    const success = document.getElementById("success");
+    success.style.display = "block";
+    setTimeout(() => {
+      success.style.display = "none";
+    }, 4000);
+
     axios
       .post(
-        "https://sheet.best/api/sheets/fc0855fc-ca9f-4f7c-bb84-bcdf48cefab0",
+        "https://sheet.best/api/sheets/f935b9d9-4400-489a-8b5f-5eed992f2e2c",
         postData
       )
       .then((response) => {
         console.log(response);
+        navigate("/");
       });
     console.log(data);
   };
@@ -84,6 +94,11 @@ export default function Upload() {
           >
             Submit
           </button>
+        </div>
+        <div className="message flex justify-center items-center pt-[5%]">
+          <div className="success" id="success">
+            Form Submitted Successfully!!
+          </div>
         </div>
       </form>
     </div>

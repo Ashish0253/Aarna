@@ -1,6 +1,6 @@
-import D1 from "../../Assets/Doc-Img/Anil.jpg";
-import D2 from "../../Assets/Doc-Img/Ravina.jpg";
-import D3 from "../../Assets/Doc-Img/Vibhu.jpg";
+import D1 from "../../Assets/Doc-Img/Anil.webp";
+import D2 from "../../Assets/Doc-Img/Ravina.webp";
+import D3 from "../../Assets/Doc-Img/Vibhu.webp";
 
 const content = [
   {

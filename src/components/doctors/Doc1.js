@@ -1,6 +1,6 @@
 import React from "react";
 import "./doctor.css";
-import D1 from "../../Assets/Doc-Img/Anil.jpg";
+import D1 from "../../Assets/Doc-Img/Anil.webp";
 
 export default function Doc1() {
   return (
