@@ -15,7 +15,16 @@ export default function Modal(props) {
 
   if (!props.open) return null;
   const onSubmit = (data) => {
-    const postData = {};
+    const postData = {
+      Test: data.test,
+      Patient_Name: data.name,
+      Email_id: data.email,
+      Gender: data.gender,
+      Mobile: data.mobile,
+      Collection_type: data.type,
+      Date: data.date,
+      Time: data.time,
+    };
     const success = document.getElementById("success");
     success.style.display = "block";
     setTimeout(() => {
@@ -24,7 +33,7 @@ export default function Modal(props) {
 
     axios
       .post(
-        "https://sheet.best/api/sheets/fc0855fc-ca9f-4f7c-bb84-bcdf48cefab0",
+        "https://sheet.best/api/sheets/f935b9d9-4400-489a-8b5f-5eed992f2e2c",
         postData
       )
       .then((response) => {
