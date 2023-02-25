@@ -11,6 +11,7 @@ export default function MessageForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = {
+      Form_Type: "Contact us form",
       Patient_Name: name,
       Mobile: phone,
       Email_id: email,

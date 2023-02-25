@@ -16,6 +16,7 @@ export default function Modal(props) {
   if (!props.open) return null;
   const onSubmit = (data) => {
     const postData = {
+      Form_Type: "Package Form",
       Package: data.test,
       Patient_Name: data.name,
       Email_id: data.email,
