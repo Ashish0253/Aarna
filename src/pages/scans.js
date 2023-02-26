@@ -1,3 +1,5 @@
+import ScansMainPage from "../components/healthScans/Scans";
+
 export default function Scans() {
-  return <p>Scans krwalo</p>;
+  return <ScansMainPage />;
 }
