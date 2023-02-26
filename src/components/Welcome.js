@@ -1,5 +1,5 @@
-import pic1 from "../Assets/Picture1.webp";
-import pic2 from "../Assets/Picture2.webp";
+import pic1 from "../Assets/WelcomeImg2.webp";
+import pic2 from "../Assets/WelcomeImg1.webp";
 // import D3 from "../../Assets/Doc-Img/Vibhu.jpg";
 
 export default function Welcome() {
