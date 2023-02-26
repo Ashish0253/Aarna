@@ -1,7 +1,13 @@
+import S1 from "../../Assets/Scans_img/ctscan.png";
+import S2 from "../../Assets/Scans_img/ultrasound.png";
+import S3 from "../../Assets/Scans_img/ecg.png";
+import S4 from "../../Assets/Scans_img/xray.png";
+
 const content = [
   {
     id: 1,
-    src: "https://helma.healthians.com/stationery/mailer-assets/61bc3c2d80996.png",
+    page: "/ctscan",
+    src: S1,
     atl: "",
     title: "CT Scan",
     price: "Starting @",
@@ -12,7 +18,8 @@ const content = [
   },
   {
     id: 1,
-    src: "https://helma.healthians.com/stationery/mailer-assets/61bc43a2774ff.png",
+    page: "/ultrasound",
+    src: S2,
     atl: "",
     title: "Ultrasound",
     price: "Starting @",
@@ -23,7 +30,8 @@ const content = [
   },
   {
     id: 1,
-    src: "https://helma.healthians.com/stationery/mailer-assets/61bc45e8a7ad0.png",
+    page: "/digitalxray",
+    src: S4,
     atl: "",
     title: "Digital X-Ray",
     price: "Starting @",
@@ -34,7 +42,8 @@ const content = [
   },
   {
     id: 1,
-    src: "https://helma.healthians.com/stationery/mailer-assets/61bc4a3f62b07.jpg",
+    page: "/ecgtest",
+    src: S3,
     atl: "",
     title: "ECG Test",
     price: "Starting @",

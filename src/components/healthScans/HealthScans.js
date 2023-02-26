@@ -9,6 +9,7 @@ import "./HealthScans.css";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { ButtonBase } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function HealthScans() {
   const slider = React.useRef(null);
@@ -84,7 +85,7 @@ function HealthScans() {
                 key={item.id}
                 className="rounded-xl overflow-hidden text-center drop-shadow-md text-black bg-white pb-5"
               >
-                <a href="/#">
+                <Link to={item.page}>
                   <img
                     src={item.src}
                     alt={item.alt}
@@ -93,7 +94,7 @@ function HealthScans() {
                   <h3 className="py-3 font-bold text-xl text-[#190e67]">
                     {item.title}
                   </h3>
-                  <h3 className="font-bold text-lg text-[#0aa1af]">
+                  <h3 className="font-bold text-lg text-[#0aa1af] py-1">
                     {item.price}
                     <span className="line-through	font-light">
                       {item.price2}
@@ -101,10 +102,13 @@ function HealthScans() {
                     {item.price3}
                   </h3>
                   {/* <p className="p-5 scan-desc">{item.description}</p> */}
-                </a>
-                <button className=" mt-6 border-transparent rounded-lg px-4 py-1 border-2 bg-[#1ebaba] text-white ">
+                </Link>
+                <Link
+                  to={item.page}
+                  className=" mt-6 border-transparent rounded-lg px-4 py-0 border-2 bg-[#1ebaba] text-white "
+                >
                   Book Now
-                </button>
+                </Link>
 
                 {/* <div className="border-transparent rounded-lg px-4 py-1 mt-4 border-2 bg-[#1ebaba] text-white hover:scale-105">
                   
