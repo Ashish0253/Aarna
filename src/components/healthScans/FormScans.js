@@ -1,12 +1,13 @@
 import { useState } from "react";
 import axios from "axios";
+import "./HealthScans.css";
 
 export default function MessageForm(props) {
   const [name, setName] = useState("");
   const [phone, setNumber] = useState("");
   const [email, setEmail] = useState("");
   const [gender, setGender] = useState("");
-  const [collection, setCollection] = useState("");
+  // const [collection, setCollection] = useState("");
   const [date, setDate] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,7 +17,7 @@ export default function MessageForm(props) {
       Mobile: phone,
       Email_id: email,
       Gender: gender,
-      Collection: collection,
+      Collection: props.scan,
       Date_Time: date,
     };
     console.log(data);
@@ -37,7 +38,7 @@ export default function MessageForm(props) {
         setEmail("");
         setNumber("");
         setGender("");
-        setCollection("");
+        // setCollection("");
         setDate("");
       });
   };
@@ -101,7 +102,7 @@ export default function MessageForm(props) {
               type="text"
               placeholder="Scan Name"
               required
-              onChange={(e) => setCollection(e.target.value)}
+              // onChange={(e) => setCollection(e.target.value)}
               value={props.scan}
               className="bg-[#1a0e69] w-[70%] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
             />
