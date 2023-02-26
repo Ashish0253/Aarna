@@ -12,21 +12,25 @@ export default function CTScan() {
         </div>
       </div>
       {/* Grey */}
-      <div className="bg-[#f1f1f1] px-[15%] pt-[7%]">
-        {/* main white box */}
-        <div className="bg-[#ffffff] rounded-xl p-[6%] pb-[20%] grid grid-cols-2">
-          <div>
-            <h1 className="text-2xl text-[#1a0e69] font-bold">CT Scan</h1>
-            <p className="text-xl text-[#0aee9c] font-semibold">@1499</p>
-            <p className="pt-4">Description of the test</p>
+      <div>
+        <div className="bg-[#f1f1f1] px-[15%] pt-[7%] relative z-[10]">
+          {/* main white box */}
+          <div className="bg-[#ffffff] rounded-3xl p-[6%] pb-[10%] grid grid-cols-2 relative z-[10]">
+            <div className="z-[1]">
+              <h1 className="text-4xl text-[#1a0e69] font-extrabold">
+                CT Scan
+              </h1>
+              <p className="text-xl text-[#0aee9c] font-semibold">@1499</p>
+              <p className="pt-4">Description of the test</p>
+            </div>
+            <div className="bg-[#1a0e69] rounded-2xl z-[1]">
+              <Form scan="CT Scan" />
+            </div>
           </div>
-          <div className="bg-[#1a0e69] rounded-2xl">
-            <Form />
-          </div>
+          {/* Last blue box */}
+          <div className="bg-[#1a0e69] w-full h-[20%] absolute bottom-[-30px] z-[0] left-[0]"></div>
         </div>
       </div>
-      {/* Last blue box */}
-      <div className="bg-[#1a0e69] h-[100px]"></div>
     </div>
   );
 }

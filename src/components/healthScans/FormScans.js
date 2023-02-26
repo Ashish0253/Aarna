@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-export default function MessageForm() {
+export default function MessageForm(props) {
   const [name, setName] = useState("");
   const [phone, setNumber] = useState("");
   const [email, setEmail] = useState("");
@@ -102,7 +102,7 @@ export default function MessageForm() {
               placeholder="Scan Name"
               required
               onChange={(e) => setCollection(e.target.value)}
-              value={collection}
+              value={props.scan}
               className="bg-[#1a0e69] w-[70%] text-white text-sm placeholder-white border-b-2 border-white placeholder:text-xs"
             />
           </div>
